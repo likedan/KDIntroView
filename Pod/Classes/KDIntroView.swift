@@ -6,6 +6,7 @@
 //
 //
 
+
 import UIKit
 
 public class KDIntroView: UIView {
@@ -15,7 +16,7 @@ public class KDIntroView: UIView {
     var lowerBound: CGFloat = 0
     
     //index : 0 - 100
-    func moveEverythingAccordingToIndex(index: CGFloat) {
+    public func moveEverythingAccordingToIndex(index: CGFloat) {
         fatalError("Must Override")
     }
     

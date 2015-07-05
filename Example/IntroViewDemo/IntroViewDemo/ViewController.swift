@@ -20,7 +20,7 @@ class ViewController: KDIntroViewController {
         super.viewWillAppear(animated)
         
         //setup the introduction view   : number of pages : the nib name of each page
-        setup(views: ["1View"])
+        setup(["1View","2View","3View","4View","5View"])
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,4 +30,3 @@ class ViewController: KDIntroViewController {
 
 
 }
-

@@ -10,29 +10,44 @@ import UIKit
 
 public class KDIntroViewController: UIViewController, UIScrollViewDelegate{
     
-    var scroller: UIScrollView!
-    var dragger: UIView!
-    var pageControl: UIPageControl!
+    public var scroller: UIScrollView!
+    public var pageControl: UIPageControl!
     
+    var dragger: UIView!
+
     var pageNum = 0
     
     var introViews = [KDIntroView]()
     
-    var currentPageNum = 0
+    var currentPageNum:Int = 0
     
     
-    public  override func viewWillAppear(animated: Bool) {
+    public override func viewWillAppear(animated: Bool) {
+        // initialization
         scroller = UIScrollView(frame: view.frame)
         scroller.showsHorizontalScrollIndicator = false
+        scroller.delegate = self
         dragger = UIView(frame: view.frame)
+        dragger.backgroundColor = UIColor.clearColor()
         var gestureReco = UIPanGestureRecognizer(target: self, action: "dragged:")
         dragger.addGestureRecognizer(gestureReco)
+        
+        // create default page control
+        if pageControl == nil{
+            pageControl = UIPageControl(frame: CGRectMake(0, 0, 100, 40))
+            pageControl.center = CGPointMake(view.frame.width / 2, view.frame.height * 3 / 4)
+        }
+        view.addSubview(scroller)
+        view.addSubview(pageControl)
+        view.addSubview(dragger)
     }
     
-    public func setup(pageNum: Int, views: [String]){
+    public func setup(views: [String]){
         
         for var index = 0; index < views.count; index++ {
+            
             var introView = NSBundle.mainBundle().loadNibNamed(views[index], owner: self, options: nil)[0] as! KDIntroView
+            println(introView.frame)
             introView.center.x = view.center.x + view.frame.width * CGFloat(index)
             scroller.addSubview(introView)
             introViews.append(introView)
@@ -46,6 +61,8 @@ public class KDIntroViewController: UIViewController, UIScrollViewDelegate{
             }
             
         }
+        pageNum = views.count
+        
     }
     
     func determineCurrentPage(){
@@ -96,60 +113,4 @@ public class KDIntroViewController: UIViewController, UIScrollViewDelegate{
         }
     }
     
-    
-    
-}
-
-class first: UIView{
-    
-    @IBOutlet var lab1: UILabel!
-    @IBOutlet var lab2: UILabel!
-    @IBOutlet var lab3: UILabel!
-    @IBOutlet var lab4: UILabel!
-    @IBOutlet var lab5: UILabel!
-    @IBOutlet var lab6: UILabel!
-    
-    @IBOutlet var icon: UIImageView!
-    
-    @IBOutlet var iconBack: UIImageView!
-    @IBOutlet var iconFront: UIImageView!
-    
-    func moveEverythingAccordingToIndex(index: CGFloat){
-        
-        var stay = CGAffineTransformMakeTranslation(index, 0)
-        var up = CGAffineTransformMakeTranslation(index, -index / 3)
-        var down = CGAffineTransformMakeTranslation(index, index / 3)
-        var speed1 = CGAffineTransformMakeTranslation(-index / 5, -index / 5)
-        var speed2 = CGAffineTransformMakeTranslation(index / 4, -index / 10)
-        var speed3 = CGAffineTransformMakeTranslation(-index / 5, 0)
-        var speed4 = CGAffineTransformMakeTranslation(index / 4, index / 10)
-        var speed5 = CGAffineTransformMakeTranslation(-index / 5, index / 5)
-        var enlarge = CGAffineTransformMake(1 + index / 20, 0, 0, 1 + index / 20, index, 0)
-        
-        lab1.transform = down
-        lab1.alpha = (200 - index) / 200
-        
-        icon.transform = up
-        icon.alpha = (200 - index) / 200
-        
-        lab2.transform = speed1
-        
-        lab3.transform = speed2
-        
-        lab4.transform = speed3
-        
-        lab5.transform = speed4
-        
-        lab6.transform = speed5
-        
-        if index < 250{
-            iconBack.transform = enlarge
-            iconBack.alpha = 1
-        }else{
-            iconBack.alpha = 0
-        }
-        
-    }
-    
-
 }

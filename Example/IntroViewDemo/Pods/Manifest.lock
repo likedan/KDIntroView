@@ -10,7 +10,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   KDIntroView:
-    :commit: 977e8a81db13826fbde67b92e248ba9e9c780b74
+    :commit: d98579ff141fad16fbeeb5cf0708289398889e37
     :git: https://github.com/likedan/KDIntroView
 
 SPEC CHECKSUMS:
