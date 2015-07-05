@@ -7,324 +7,307 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17F6F793C61584F19FF57749 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD24E3A3E8E1A6DA82237DF2 /* Foundation.framework */; };
-		3503BF1A70E28B6EE7273A09 /* KDIntroView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF2C7E7B95CCA3A8E6226D8 /* KDIntroView-dummy.m */; };
-		3FCCFC4095E0863B08BBC145 /* KDIntroView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D8A8AB6A0C3791A1F2832AB8 /* KDIntroView.bundle */; };
-		42DF69D91B49CD9B00FCBE26 /* KDIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DF69D71B49CD9B00FCBE26 /* KDIntroView.swift */; };
-		42DF69DA1B49CD9B00FCBE26 /* KDIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DF69D81B49CD9B00FCBE26 /* KDIntroViewController.swift */; };
-		70709F1DDEF7E44DDF1D2ECF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD24E3A3E8E1A6DA82237DF2 /* Foundation.framework */; };
-		862AE550A60763C301CB2831 /* Pods-KDIntroView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2FED9374939052CF76DBB3 /* Pods-KDIntroView_Example-dummy.m */; };
-		AC3A104FF8560B9EB5B60EF2 /* Pods-KDIntroView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D613EDC79CBAD602B1B98C5D /* Pods-KDIntroView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C799113B7D1A24603832968C /* KDIntroView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E2F6DC4A6C39EFE146554D1E /* KDIntroView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C9D28C0207C5FDE505E551BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD24E3A3E8E1A6DA82237DF2 /* Foundation.framework */; };
-		CC1B9880731CD0111FFC1D72 /* Pods-KDIntroView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 98F32DA3D1C3DCD9B514DA79 /* Pods-KDIntroView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CD752D3294772FE7F5CF00A0 /* Pods-KDIntroView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C021847A6FCAF4590F82AB1A /* Pods-KDIntroView_Tests-dummy.m */; };
+		0C91BFDC24D69132E3070199 /* Pods-KDIntroView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 25F52BC1AFDE80D608C7596B /* Pods-KDIntroView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1AF32314BE2E70C93B2175 /* Pods-KDIntroView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 085E8C0585CF883934B6E3D2 /* Pods-KDIntroView_Example-dummy.m */; };
+		22019B17E71F4B1FFF92F67C /* Pods-KDIntroView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D53C6C6E798D002C5387FD87 /* Pods-KDIntroView_Tests-dummy.m */; };
+		272D0480755E80B9E325F4EC /* KDIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EA90F1C005C1B92064F480 /* KDIntroViewController.swift */; };
+		3CD89FF59A6C7BE85660ADBC /* KDIntroView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C806AA7D8CCB05CCC9FDFCF /* KDIntroView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E27B9C0B813B256DB767DB3 /* Pods-KDIntroView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FD126B0DE6F2EDA675845D5 /* Pods-KDIntroView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E81B0062A4F3FCBCD9168E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A60637EE5E4CB2307237067 /* Foundation.framework */; };
+		B23901342D64CEA7CA67B43F /* KDIntroView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9686C3B57AAD6C3870C42FE5 /* KDIntroView-dummy.m */; };
+		B967659E25780E803339308E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A60637EE5E4CB2307237067 /* Foundation.framework */; };
+		DE2AF10DCF72E2838CC4BA57 /* KDIntroView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B6D0F6363E2AA7AA13C12305 /* KDIntroView.bundle */; };
+		F320BCBD1E57BBEF609F33FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A60637EE5E4CB2307237067 /* Foundation.framework */; };
+		F3E51864AE2DAE98E83524BA /* KDIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5013D6DBE398F91FA106CDC3 /* KDIntroView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3DDB0DF28A66237A1813E923 /* PBXContainerItemProxy */ = {
+		0FD8541C914AD2B6B807C3E0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5F519E4CD181A6E2B5A9E9C8 /* Project object */;
+			containerPortal = ADBDB6C891AD5A976A2275C4 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DF9749B1EE046BABC3CA6530;
-			remoteInfo = "KDIntroView-KDIntroView";
-		};
-		4785ED8821818CFD6924A0CD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5F519E4CD181A6E2B5A9E9C8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 602225FBEA0A7413D9833D03;
+			remoteGlobalIDString = 7930F112DE43AF635282DADF;
 			remoteInfo = KDIntroView;
 		};
-		FE939DF3C9C4DDE7256DE293 /* PBXContainerItemProxy */ = {
+		596F464204326E68E6051978 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5F519E4CD181A6E2B5A9E9C8 /* Project object */;
+			containerPortal = ADBDB6C891AD5A976A2275C4 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 602225FBEA0A7413D9833D03;
+			remoteGlobalIDString = 99C460956156A97DFDA9C75D;
+			remoteInfo = "KDIntroView-KDIntroView";
+		};
+		6B4A42B3585A1FCC8039ACA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADBDB6C891AD5A976A2275C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7930F112DE43AF635282DADF;
 			remoteInfo = KDIntroView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		060F9D387FB09ECA1AF84330 /* Pods-KDIntroView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KDIntroView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		21D0E795B0E8F37F0F050F7D /* Pods-KDIntroView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KDIntroView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		2F82799E2846B66E033F383A /* Pods-KDIntroView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KDIntroView_Example.modulemap"; sourceTree = "<group>"; };
-		38865EC3DA323EDA56FF2C10 /* KDIntroView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KDIntroView.xcconfig; sourceTree = "<group>"; };
-		3899B72BEB25A90A6C1C31FA /* Pods-KDIntroView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KDIntroView_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		39399DE267E247414DB6CC52 /* Pods-KDIntroView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KDIntroView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		39F4828C968FA23F3C09CF86 /* Pods_KDIntroView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KDIntroView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DEC69DE4E3A0C7AF2C7320E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		42DF69D71B49CD9B00FCBE26 /* KDIntroView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDIntroView.swift; sourceTree = "<group>"; };
-		42DF69D81B49CD9B00FCBE26 /* KDIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDIntroViewController.swift; sourceTree = "<group>"; };
-		4D1E65125A2EFBB1ED2FA110 /* Pods-KDIntroView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KDIntroView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		58081F0297D3C37B52282FED /* Pods_KDIntroView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KDIntroView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D2A8457A815A689C446B6D8 /* Pods-KDIntroView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KDIntroView_Tests.modulemap"; sourceTree = "<group>"; };
-		620A1F67360385CFFC9F8C52 /* KDIntroView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KDIntroView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E2FED9374939052CF76DBB3 /* Pods-KDIntroView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KDIntroView_Example-dummy.m"; sourceTree = "<group>"; };
-		7631C231E90FC8BC576F7D8E /* KDIntroView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KDIntroView.modulemap; sourceTree = "<group>"; };
-		98780D126C6FA7CC5DE91107 /* Pods-KDIntroView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KDIntroView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		98F32DA3D1C3DCD9B514DA79 /* Pods-KDIntroView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KDIntroView_Example-umbrella.h"; sourceTree = "<group>"; };
-		A11A14805C27A6BF741D206A /* Pods-KDIntroView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KDIntroView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A6DFF47ADB1C704E01D95BA1 /* Pods-KDIntroView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KDIntroView_Example-frameworks.sh"; sourceTree = "<group>"; };
-		ADEF88789B58F6B4FD00AD40 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B583D2E00F26A5826EAC3472 /* Pods-KDIntroView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KDIntroView_Example-resources.sh"; sourceTree = "<group>"; };
-		BAF2C7E7B95CCA3A8E6226D8 /* KDIntroView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KDIntroView-dummy.m"; sourceTree = "<group>"; };
-		C021847A6FCAF4590F82AB1A /* Pods-KDIntroView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KDIntroView_Tests-dummy.m"; sourceTree = "<group>"; };
-		D613EDC79CBAD602B1B98C5D /* Pods-KDIntroView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KDIntroView_Tests-umbrella.h"; sourceTree = "<group>"; };
-		D8A8AB6A0C3791A1F2832AB8 /* KDIntroView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KDIntroView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		D923184DADF650548B74AC56 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD24E3A3E8E1A6DA82237DF2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DF8F5E79E707FEC79F519FE5 /* Pods-KDIntroView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KDIntroView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		E2F6DC4A6C39EFE146554D1E /* KDIntroView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KDIntroView-umbrella.h"; sourceTree = "<group>"; };
-		E5624F019002A283D2AF0828 /* Pods-KDIntroView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KDIntroView_Tests-resources.sh"; sourceTree = "<group>"; };
-		EE623D416C4CE572F70905E9 /* KDIntroView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KDIntroView-prefix.pch"; sourceTree = "<group>"; };
-		F3E9636ACCBB0721B33822DE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F8F8853AA4B523B367D70552 /* Pods-KDIntroView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KDIntroView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FF819A10EE832415086FAC6B /* KDIntroView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "KDIntroView-Private.xcconfig"; sourceTree = "<group>"; };
+		07146495D14EFD29F7BF255C /* Pods-KDIntroView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KDIntroView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		085E8C0585CF883934B6E3D2 /* Pods-KDIntroView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KDIntroView_Example-dummy.m"; sourceTree = "<group>"; };
+		0A1C738D892EB497F010ED0E /* KDIntroView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KDIntroView.xcconfig; sourceTree = "<group>"; };
+		0BC4A59B0C962AD324209A9F /* Pods-KDIntroView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KDIntroView_Example.modulemap"; sourceTree = "<group>"; };
+		0E93FE1498F9087B6ADD2469 /* Pods-KDIntroView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KDIntroView_Example-resources.sh"; sourceTree = "<group>"; };
+		12C6344C971A8D7BDC943A08 /* Pods_KDIntroView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KDIntroView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14CCDC85504F0E712DE6EBBE /* Pods-KDIntroView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KDIntroView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1DCFD64951659716FAD5C9D8 /* KDIntroView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "KDIntroView-Private.xcconfig"; sourceTree = "<group>"; };
+		21899260A2556B9E5EB2B914 /* Pods-KDIntroView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KDIntroView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		2202D88232567685C4FF9BAE /* Pods-KDIntroView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KDIntroView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		23472BE06F14059B8DB65E22 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25F52BC1AFDE80D608C7596B /* Pods-KDIntroView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KDIntroView_Example-umbrella.h"; sourceTree = "<group>"; };
+		2F323237DF0AF59EDAA36F69 /* Pods-KDIntroView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KDIntroView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3FD126B0DE6F2EDA675845D5 /* Pods-KDIntroView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KDIntroView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		44BBB2A3FD2DD2C486E732B7 /* KDIntroView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KDIntroView-prefix.pch"; sourceTree = "<group>"; };
+		44E4F04F0A978A7EB1367FBF /* Pods-KDIntroView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KDIntroView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4A60637EE5E4CB2307237067 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5013D6DBE398F91FA106CDC3 /* KDIntroView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KDIntroView.swift; path = Pod/Classes/KDIntroView.swift; sourceTree = "<group>"; };
+		60FCE90678AF16F8F461EC65 /* KDIntroView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KDIntroView.modulemap; sourceTree = "<group>"; };
+		655A32B25A8C4B9AFFC640F0 /* Pods-KDIntroView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KDIntroView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		660D7121D8FDF97463CDCA34 /* Pods-KDIntroView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KDIntroView_Tests.modulemap"; sourceTree = "<group>"; };
+		7C806AA7D8CCB05CCC9FDFCF /* KDIntroView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KDIntroView-umbrella.h"; sourceTree = "<group>"; };
+		94213D83E9CBD9038ECD7340 /* Pods-KDIntroView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KDIntroView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		9423FF168EC4F9F5CCAF5A72 /* Pods-KDIntroView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KDIntroView_Tests-resources.sh"; sourceTree = "<group>"; };
+		9686C3B57AAD6C3870C42FE5 /* KDIntroView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KDIntroView-dummy.m"; sourceTree = "<group>"; };
+		99EEE8F574B54D5EC8C5F293 /* KDIntroView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KDIntroView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EEAE5628C81A3F6F4F45DA3 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ABFA3C02ED7322A9DF323488 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6D0F6363E2AA7AA13C12305 /* KDIntroView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KDIntroView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0D0AE269C07680BA681B082 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB33FAE305C087B99277E3FA /* Pods_KDIntroView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KDIntroView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D53C6C6E798D002C5387FD87 /* Pods-KDIntroView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KDIntroView_Tests-dummy.m"; sourceTree = "<group>"; };
+		D9EA90F1C005C1B92064F480 /* KDIntroViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KDIntroViewController.swift; path = Pod/Classes/KDIntroViewController.swift; sourceTree = "<group>"; };
+		E9C3E2EC281CE45D1382B513 /* Pods-KDIntroView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KDIntroView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		EE1416DDDCF1C4039D6C61EE /* Pods-KDIntroView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KDIntroView_Tests-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		07B6180163448F35C1692D01 /* Frameworks */ = {
+		00329D740D6721D39D906107 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9D28C0207C5FDE505E551BC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3139C5207402ECB2BF82414C /* Frameworks */ = {
+		1EC83BF39546AA256E8815F7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17F6F793C61584F19FF57749 /* Foundation.framework in Frameworks */,
+				F320BCBD1E57BBEF609F33FA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9381D99173AF2E96A13A9293 /* Frameworks */ = {
+		5B4C75A0A65E117F88D16E0B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70709F1DDEF7E44DDF1D2ECF /* Foundation.framework in Frameworks */,
+				7E81B0062A4F3FCBCD9168E8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E194D05308D1508BF80DC34D /* Frameworks */ = {
+		EB5A45B26B5198A5FA9DE343 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B967659E25780E803339308E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		20615C1C1780D284F4CF3F1D /* KDIntroView */ = {
+		0A61566DFDF95170F39E9DA2 /* Pods-KDIntroView_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				504C58B70B5A824EF55F3DF0 /* Pod */,
-				2690EDD896566744099D5C14 /* Support Files */,
-			);
-			name = KDIntroView;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		2690EDD896566744099D5C14 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3DEC69DE4E3A0C7AF2C7320E /* Info.plist */,
-				7631C231E90FC8BC576F7D8E /* KDIntroView.modulemap */,
-				38865EC3DA323EDA56FF2C10 /* KDIntroView.xcconfig */,
-				FF819A10EE832415086FAC6B /* KDIntroView-Private.xcconfig */,
-				BAF2C7E7B95CCA3A8E6226D8 /* KDIntroView-dummy.m */,
-				EE623D416C4CE572F70905E9 /* KDIntroView-prefix.pch */,
-				E2F6DC4A6C39EFE146554D1E /* KDIntroView-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/KDIntroView";
-			sourceTree = "<group>";
-		};
-		29C804D14AE8FDA3E8FBF722 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				42DF69D71B49CD9B00FCBE26 /* KDIntroView.swift */,
-				42DF69D81B49CD9B00FCBE26 /* KDIntroViewController.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		2F1177CF3C3F73D079C98FCE /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				DDD03D153B7DD26F60BC0934 /* Pods-KDIntroView_Example */,
-				BD9DD4A5095B5134345CC2D4 /* Pods-KDIntroView_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		504C58B70B5A824EF55F3DF0 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				29C804D14AE8FDA3E8FBF722 /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		B36202624A85B8C3FFE0CBD2 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D8A8AB6A0C3791A1F2832AB8 /* KDIntroView.bundle */,
-				620A1F67360385CFFC9F8C52 /* KDIntroView.framework */,
-				39F4828C968FA23F3C09CF86 /* Pods_KDIntroView_Example.framework */,
-				58081F0297D3C37B52282FED /* Pods_KDIntroView_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		B555F376DE63BDDEA2EC2EF4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F5D01974FC65FC5DB9AD7CCE /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BD9DD4A5095B5134345CC2D4 /* Pods-KDIntroView_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				F3E9636ACCBB0721B33822DE /* Info.plist */,
-				5D2A8457A815A689C446B6D8 /* Pods-KDIntroView_Tests.modulemap */,
-				A11A14805C27A6BF741D206A /* Pods-KDIntroView_Tests-acknowledgements.markdown */,
-				DF8F5E79E707FEC79F519FE5 /* Pods-KDIntroView_Tests-acknowledgements.plist */,
-				C021847A6FCAF4590F82AB1A /* Pods-KDIntroView_Tests-dummy.m */,
-				3899B72BEB25A90A6C1C31FA /* Pods-KDIntroView_Tests-frameworks.sh */,
-				E5624F019002A283D2AF0828 /* Pods-KDIntroView_Tests-resources.sh */,
-				D613EDC79CBAD602B1B98C5D /* Pods-KDIntroView_Tests-umbrella.h */,
-				060F9D387FB09ECA1AF84330 /* Pods-KDIntroView_Tests.debug.xcconfig */,
-				39399DE267E247414DB6CC52 /* Pods-KDIntroView_Tests.release.xcconfig */,
+				23472BE06F14059B8DB65E22 /* Info.plist */,
+				660D7121D8FDF97463CDCA34 /* Pods-KDIntroView_Tests.modulemap */,
+				44E4F04F0A978A7EB1367FBF /* Pods-KDIntroView_Tests-acknowledgements.markdown */,
+				14CCDC85504F0E712DE6EBBE /* Pods-KDIntroView_Tests-acknowledgements.plist */,
+				D53C6C6E798D002C5387FD87 /* Pods-KDIntroView_Tests-dummy.m */,
+				EE1416DDDCF1C4039D6C61EE /* Pods-KDIntroView_Tests-frameworks.sh */,
+				9423FF168EC4F9F5CCAF5A72 /* Pods-KDIntroView_Tests-resources.sh */,
+				3FD126B0DE6F2EDA675845D5 /* Pods-KDIntroView_Tests-umbrella.h */,
+				E9C3E2EC281CE45D1382B513 /* Pods-KDIntroView_Tests.debug.xcconfig */,
+				655A32B25A8C4B9AFFC640F0 /* Pods-KDIntroView_Tests.release.xcconfig */,
 			);
 			name = "Pods-KDIntroView_Tests";
 			path = "Target Support Files/Pods-KDIntroView_Tests";
 			sourceTree = "<group>";
 		};
-		CA07EBCC2C36C290BFA1069D /* Development Pods */ = {
+		4CBCEBD2EC97B8B6DC01D11D /* Pods-KDIntroView_Example */ = {
 			isa = PBXGroup;
 			children = (
-				20615C1C1780D284F4CF3F1D /* KDIntroView */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		DDD03D153B7DD26F60BC0934 /* Pods-KDIntroView_Example */ = {
-			isa = PBXGroup;
-			children = (
-				D923184DADF650548B74AC56 /* Info.plist */,
-				2F82799E2846B66E033F383A /* Pods-KDIntroView_Example.modulemap */,
-				4D1E65125A2EFBB1ED2FA110 /* Pods-KDIntroView_Example-acknowledgements.markdown */,
-				98780D126C6FA7CC5DE91107 /* Pods-KDIntroView_Example-acknowledgements.plist */,
-				6E2FED9374939052CF76DBB3 /* Pods-KDIntroView_Example-dummy.m */,
-				A6DFF47ADB1C704E01D95BA1 /* Pods-KDIntroView_Example-frameworks.sh */,
-				B583D2E00F26A5826EAC3472 /* Pods-KDIntroView_Example-resources.sh */,
-				98F32DA3D1C3DCD9B514DA79 /* Pods-KDIntroView_Example-umbrella.h */,
-				F8F8853AA4B523B367D70552 /* Pods-KDIntroView_Example.debug.xcconfig */,
-				21D0E795B0E8F37F0F050F7D /* Pods-KDIntroView_Example.release.xcconfig */,
+				ABFA3C02ED7322A9DF323488 /* Info.plist */,
+				0BC4A59B0C962AD324209A9F /* Pods-KDIntroView_Example.modulemap */,
+				2F323237DF0AF59EDAA36F69 /* Pods-KDIntroView_Example-acknowledgements.markdown */,
+				07146495D14EFD29F7BF255C /* Pods-KDIntroView_Example-acknowledgements.plist */,
+				085E8C0585CF883934B6E3D2 /* Pods-KDIntroView_Example-dummy.m */,
+				94213D83E9CBD9038ECD7340 /* Pods-KDIntroView_Example-frameworks.sh */,
+				0E93FE1498F9087B6ADD2469 /* Pods-KDIntroView_Example-resources.sh */,
+				25F52BC1AFDE80D608C7596B /* Pods-KDIntroView_Example-umbrella.h */,
+				21899260A2556B9E5EB2B914 /* Pods-KDIntroView_Example.debug.xcconfig */,
+				2202D88232567685C4FF9BAE /* Pods-KDIntroView_Example.release.xcconfig */,
 			);
 			name = "Pods-KDIntroView_Example";
 			path = "Target Support Files/Pods-KDIntroView_Example";
 			sourceTree = "<group>";
 		};
-		F38D81214D9CCEB538112A9E = {
+		4E8294338480AE97FC3A432B /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				ADEF88789B58F6B4FD00AD40 /* Podfile */,
-				CA07EBCC2C36C290BFA1069D /* Development Pods */,
-				B555F376DE63BDDEA2EC2EF4 /* Frameworks */,
-				B36202624A85B8C3FFE0CBD2 /* Products */,
-				2F1177CF3C3F73D079C98FCE /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		F5D01974FC65FC5DB9AD7CCE /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				DD24E3A3E8E1A6DA82237DF2 /* Foundation.framework */,
+				4A60637EE5E4CB2307237067 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		535B8AA8E5595CE950B2A679 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CBCEBD2EC97B8B6DC01D11D /* Pods-KDIntroView_Example */,
+				0A61566DFDF95170F39E9DA2 /* Pods-KDIntroView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		60F81B6635FE85B8E4D2D096 /* KDIntroView */ = {
+			isa = PBXGroup;
+			children = (
+				5013D6DBE398F91FA106CDC3 /* KDIntroView.swift */,
+				D9EA90F1C005C1B92064F480 /* KDIntroViewController.swift */,
+				D78C3566EF1510E8FFFD50BB /* Support Files */,
+			);
+			path = KDIntroView;
+			sourceTree = "<group>";
+		};
+		7370AA5ECEB48D3A743F1819 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60F81B6635FE85B8E4D2D096 /* KDIntroView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		82E62370E3E29DCF6DBCEF5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6D0F6363E2AA7AA13C12305 /* KDIntroView.bundle */,
+				99EEE8F574B54D5EC8C5F293 /* KDIntroView.framework */,
+				CB33FAE305C087B99277E3FA /* Pods_KDIntroView_Example.framework */,
+				12C6344C971A8D7BDC943A08 /* Pods_KDIntroView_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D78C3566EF1510E8FFFD50BB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0D0AE269C07680BA681B082 /* Info.plist */,
+				60FCE90678AF16F8F461EC65 /* KDIntroView.modulemap */,
+				0A1C738D892EB497F010ED0E /* KDIntroView.xcconfig */,
+				1DCFD64951659716FAD5C9D8 /* KDIntroView-Private.xcconfig */,
+				9686C3B57AAD6C3870C42FE5 /* KDIntroView-dummy.m */,
+				44BBB2A3FD2DD2C486E732B7 /* KDIntroView-prefix.pch */,
+				7C806AA7D8CCB05CCC9FDFCF /* KDIntroView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KDIntroView";
+			sourceTree = "<group>";
+		};
+		DD803C02336C615B5DE9BEC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E8294338480AE97FC3A432B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E18B50DF8CAFE403BE8691B2 = {
+			isa = PBXGroup;
+			children = (
+				9EEAE5628C81A3F6F4F45DA3 /* Podfile */,
+				DD803C02336C615B5DE9BEC6 /* Frameworks */,
+				7370AA5ECEB48D3A743F1819 /* Pods */,
+				82E62370E3E29DCF6DBCEF5A /* Products */,
+				535B8AA8E5595CE950B2A679 /* Targets Support Files */,
+			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		97BBC1B4D41CB7C9F015F4E3 /* Headers */ = {
+		0882E97236711C21122D63DE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC3A104FF8560B9EB5B60EF2 /* Pods-KDIntroView_Tests-umbrella.h in Headers */,
+				0C91BFDC24D69132E3070199 /* Pods-KDIntroView_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B9E0BF2C73526C8E14B3558F /* Headers */ = {
+		705E6F19B07EE8ED7C7B6723 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C799113B7D1A24603832968C /* KDIntroView-umbrella.h in Headers */,
+				6E27B9C0B813B256DB767DB3 /* Pods-KDIntroView_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA4289A1FC5ED71825F09F4F /* Headers */ = {
+		F61EE67890DC9D23742FB008 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC1B9880731CD0111FFC1D72 /* Pods-KDIntroView_Example-umbrella.h in Headers */,
+				3CD89FF59A6C7BE85660ADBC /* KDIntroView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		602225FBEA0A7413D9833D03 /* KDIntroView */ = {
+		017E1EB5D3399AD7E9F9E143 /* Pods-KDIntroView_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E6C8EF8E8C53ACFF9BE404F6 /* Build configuration list for PBXNativeTarget "KDIntroView" */;
+			buildConfigurationList = 5BBB9E76580488FA1CF3E377 /* Build configuration list for PBXNativeTarget "Pods-KDIntroView_Tests" */;
 			buildPhases = (
-				0C74A44FB8685C79256BBAD9 /* Sources */,
-				07B6180163448F35C1692D01 /* Frameworks */,
-				0712BC95920869BBFB916A82 /* Resources */,
-				B9E0BF2C73526C8E14B3558F /* Headers */,
+				CAB3ADFD6C20EFDD994E5BDB /* Sources */,
+				1EC83BF39546AA256E8815F7 /* Frameworks */,
+				705E6F19B07EE8ED7C7B6723 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9EA3F2717601460A8C83F2D1 /* PBXTargetDependency */,
-			);
-			name = KDIntroView;
-			productName = KDIntroView;
-			productReference = 620A1F67360385CFFC9F8C52 /* KDIntroView.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		BEC0CAA3725EE2391A5344A8 /* Pods-KDIntroView_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AA9C3448C53BA85D10AE4D46 /* Build configuration list for PBXNativeTarget "Pods-KDIntroView_Tests" */;
-			buildPhases = (
-				4146CCF1B2F186CDC906FD3E /* Sources */,
-				9381D99173AF2E96A13A9293 /* Frameworks */,
-				97BBC1B4D41CB7C9F015F4E3 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				317F5AF977600120CCF5F20D /* PBXTargetDependency */,
+				F854576C032F386CBA6E1541 /* PBXTargetDependency */,
 			);
 			name = "Pods-KDIntroView_Tests";
 			productName = "Pods-KDIntroView_Tests";
-			productReference = 58081F0297D3C37B52282FED /* Pods_KDIntroView_Tests.framework */;
+			productReference = 12C6344C971A8D7BDC943A08 /* Pods_KDIntroView_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DF9749B1EE046BABC3CA6530 /* KDIntroView-KDIntroView */ = {
+		7930F112DE43AF635282DADF /* KDIntroView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 121A3A82F8908DB383013DA0 /* Build configuration list for PBXNativeTarget "KDIntroView-KDIntroView" */;
+			buildConfigurationList = 5C72198DEE1410A2C0A394F9 /* Build configuration list for PBXNativeTarget "KDIntroView" */;
 			buildPhases = (
-				B156A5BE3F911430B21E8A38 /* Sources */,
-				E194D05308D1508BF80DC34D /* Frameworks */,
-				AFFA01FBE4D9E65DB216EBDE /* Resources */,
+				BC6CA03AED60D2168AF2FC3C /* Sources */,
+				EB5A45B26B5198A5FA9DE343 /* Frameworks */,
+				4FA326C967430FFA2FBED2C9 /* Resources */,
+				F61EE67890DC9D23742FB008 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC0E56F847A1870FED85A0F4 /* PBXTargetDependency */,
+			);
+			name = KDIntroView;
+			productName = KDIntroView;
+			productReference = 99EEE8F574B54D5EC8C5F293 /* KDIntroView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		99C460956156A97DFDA9C75D /* KDIntroView-KDIntroView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CBB41B20DB79C7F6BD67C27 /* Build configuration list for PBXNativeTarget "KDIntroView-KDIntroView" */;
+			buildPhases = (
+				96C9FF9A363C51119DBFEC63 /* Sources */,
+				00329D740D6721D39D906107 /* Frameworks */,
+				111FC261F27721C6D99F6FF1 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -332,133 +315,163 @@
 			);
 			name = "KDIntroView-KDIntroView";
 			productName = "KDIntroView-KDIntroView";
-			productReference = D8A8AB6A0C3791A1F2832AB8 /* KDIntroView.bundle */;
+			productReference = B6D0F6363E2AA7AA13C12305 /* KDIntroView.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		E50BC58A9A833BE2DC491BCE /* Pods-KDIntroView_Example */ = {
+		D8457CE3E79F5BD0718A6399 /* Pods-KDIntroView_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 48388E02EF2BDD68D24A4860 /* Build configuration list for PBXNativeTarget "Pods-KDIntroView_Example" */;
+			buildConfigurationList = 3B60213B32EB7EF214E869F4 /* Build configuration list for PBXNativeTarget "Pods-KDIntroView_Example" */;
 			buildPhases = (
-				12ED0E56750B4D1627BA181A /* Sources */,
-				3139C5207402ECB2BF82414C /* Frameworks */,
-				FA4289A1FC5ED71825F09F4F /* Headers */,
+				A7F9DDC34D693DCA45563727 /* Sources */,
+				5B4C75A0A65E117F88D16E0B /* Frameworks */,
+				0882E97236711C21122D63DE /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B4170B7A8E2A7B855F254492 /* PBXTargetDependency */,
+				94EFD352BC63769677D0FD05 /* PBXTargetDependency */,
 			);
 			name = "Pods-KDIntroView_Example";
 			productName = "Pods-KDIntroView_Example";
-			productReference = 39F4828C968FA23F3C09CF86 /* Pods_KDIntroView_Example.framework */;
+			productReference = CB33FAE305C087B99277E3FA /* Pods_KDIntroView_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5F519E4CD181A6E2B5A9E9C8 /* Project object */ = {
+		ADBDB6C891AD5A976A2275C4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 			};
-			buildConfigurationList = 6FA286EA53FB939A4003C250 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = EF243EB2E9024D152C815F0A /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = F38D81214D9CCEB538112A9E;
-			productRefGroup = B36202624A85B8C3FFE0CBD2 /* Products */;
+			mainGroup = E18B50DF8CAFE403BE8691B2;
+			productRefGroup = 82E62370E3E29DCF6DBCEF5A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				602225FBEA0A7413D9833D03 /* KDIntroView */,
-				DF9749B1EE046BABC3CA6530 /* KDIntroView-KDIntroView */,
-				E50BC58A9A833BE2DC491BCE /* Pods-KDIntroView_Example */,
-				BEC0CAA3725EE2391A5344A8 /* Pods-KDIntroView_Tests */,
+				7930F112DE43AF635282DADF /* KDIntroView */,
+				99C460956156A97DFDA9C75D /* KDIntroView-KDIntroView */,
+				D8457CE3E79F5BD0718A6399 /* Pods-KDIntroView_Example */,
+				017E1EB5D3399AD7E9F9E143 /* Pods-KDIntroView_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0712BC95920869BBFB916A82 /* Resources */ = {
+		111FC261F27721C6D99F6FF1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FCCFC4095E0863B08BBC145 /* KDIntroView.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AFFA01FBE4D9E65DB216EBDE /* Resources */ = {
+		4FA326C967430FFA2FBED2C9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE2AF10DCF72E2838CC4BA57 /* KDIntroView.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0C74A44FB8685C79256BBAD9 /* Sources */ = {
+		96C9FF9A363C51119DBFEC63 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42DF69D91B49CD9B00FCBE26 /* KDIntroView.swift in Sources */,
-				3503BF1A70E28B6EE7273A09 /* KDIntroView-dummy.m in Sources */,
-				42DF69DA1B49CD9B00FCBE26 /* KDIntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		12ED0E56750B4D1627BA181A /* Sources */ = {
+		A7F9DDC34D693DCA45563727 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				862AE550A60763C301CB2831 /* Pods-KDIntroView_Example-dummy.m in Sources */,
+				1B1AF32314BE2E70C93B2175 /* Pods-KDIntroView_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4146CCF1B2F186CDC906FD3E /* Sources */ = {
+		BC6CA03AED60D2168AF2FC3C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD752D3294772FE7F5CF00A0 /* Pods-KDIntroView_Tests-dummy.m in Sources */,
+				B23901342D64CEA7CA67B43F /* KDIntroView-dummy.m in Sources */,
+				F3E51864AE2DAE98E83524BA /* KDIntroView.swift in Sources */,
+				272D0480755E80B9E325F4EC /* KDIntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B156A5BE3F911430B21E8A38 /* Sources */ = {
+		CAB3ADFD6C20EFDD994E5BDB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22019B17E71F4B1FFF92F67C /* Pods-KDIntroView_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		317F5AF977600120CCF5F20D /* PBXTargetDependency */ = {
+		94EFD352BC63769677D0FD05 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KDIntroView;
-			target = 602225FBEA0A7413D9833D03 /* KDIntroView */;
-			targetProxy = 4785ED8821818CFD6924A0CD /* PBXContainerItemProxy */;
+			target = 7930F112DE43AF635282DADF /* KDIntroView */;
+			targetProxy = 0FD8541C914AD2B6B807C3E0 /* PBXContainerItemProxy */;
 		};
-		9EA3F2717601460A8C83F2D1 /* PBXTargetDependency */ = {
+		F854576C032F386CBA6E1541 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KDIntroView;
+			target = 7930F112DE43AF635282DADF /* KDIntroView */;
+			targetProxy = 6B4A42B3585A1FCC8039ACA0 /* PBXContainerItemProxy */;
+		};
+		FC0E56F847A1870FED85A0F4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "KDIntroView-KDIntroView";
-			target = DF9749B1EE046BABC3CA6530 /* KDIntroView-KDIntroView */;
-			targetProxy = 3DDB0DF28A66237A1813E923 /* PBXContainerItemProxy */;
-		};
-		B4170B7A8E2A7B855F254492 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = KDIntroView;
-			target = 602225FBEA0A7413D9833D03 /* KDIntroView */;
-			targetProxy = FE939DF3C9C4DDE7256DE293 /* PBXContainerItemProxy */;
+			target = 99C460956156A97DFDA9C75D /* KDIntroView-KDIntroView */;
+			targetProxy = 596F464204326E68E6051978 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		11036BD85FF1D1813E871D31 /* Debug */ = {
+		17E53897DC0341AF1CC58783 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21899260A2556B9E5EB2B914 /* Pods-KDIntroView_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-KDIntroView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-KDIntroView_Example/Pods-KDIntroView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_KDIntroView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		29281F9C1BA1385722932691 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -490,172 +503,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		298B35BF9EF32198604CA9CC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 39399DE267E247414DB6CC52 /* Pods-KDIntroView_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-KDIntroView_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-KDIntroView_Tests/Pods-KDIntroView_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_KDIntroView_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		3E69908EC45E4E81C758184E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF819A10EE832415086FAC6B /* KDIntroView-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = KDIntroView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		4C5DFEF5B05A717285B94A04 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8F8853AA4B523B367D70552 /* Pods-KDIntroView_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-KDIntroView_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-KDIntroView_Example/Pods-KDIntroView_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_KDIntroView_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		519323B301A32A30A6AC9892 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF819A10EE832415086FAC6B /* KDIntroView-Private.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/KDIntroView/KDIntroView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KDIntroView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/KDIntroView/KDIntroView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = KDIntroView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8522392D9655767E70C7F2DE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 060F9D387FB09ECA1AF84330 /* Pods-KDIntroView_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-KDIntroView_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-KDIntroView_Tests/Pods-KDIntroView_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_KDIntroView_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9AA1E5DAD2035E1359510314 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF819A10EE832415086FAC6B /* KDIntroView-Private.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/KDIntroView/KDIntroView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KDIntroView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/KDIntroView/KDIntroView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = KDIntroView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A402FD72384C42CD5FC5E4FB /* Release */ = {
+		36BBCAEBA3ECB40552CFCD58 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -682,16 +537,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		E1FA86EDE597369137CF618D /* Release */ = {
+		411FFF0B3528CED870ECDE3E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21D0E795B0E8F37F0F050F7D /* Pods-KDIntroView_Example.release.xcconfig */;
+			baseConfigurationReference = 2202D88232567685C4FF9BAE /* Pods-KDIntroView_Example.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -702,7 +557,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-KDIntroView_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Pods-KDIntroView_Example/Pods-KDIntroView_Example.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -718,9 +573,38 @@
 			};
 			name = Release;
 		};
-		FD7F2F8740D420D95F9148F7 /* Debug */ = {
+		7A5E371FAE5F7CA25B8627EC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF819A10EE832415086FAC6B /* KDIntroView-Private.xcconfig */;
+			baseConfigurationReference = 655A32B25A8C4B9AFFC640F0 /* Pods-KDIntroView_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-KDIntroView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-KDIntroView_Tests/Pods-KDIntroView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_KDIntroView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9ADA79C652384F2BC445BFBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DCFD64951659716FAD5C9D8 /* KDIntroView-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = KDIntroView;
@@ -730,55 +614,152 @@
 			};
 			name = Debug;
 		};
+		ABC019C20C05B0BD1D5BE03A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DCFD64951659716FAD5C9D8 /* KDIntroView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = KDIntroView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		B06492BB9B1D748E9FE93419 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DCFD64951659716FAD5C9D8 /* KDIntroView-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KDIntroView/KDIntroView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KDIntroView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KDIntroView/KDIntroView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = KDIntroView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C11A361203A6D4BE32C79582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9C3E2EC281CE45D1382B513 /* Pods-KDIntroView_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-KDIntroView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-KDIntroView_Tests/Pods-KDIntroView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_KDIntroView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DE3132EDA7130F33E3038668 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DCFD64951659716FAD5C9D8 /* KDIntroView-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KDIntroView/KDIntroView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KDIntroView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KDIntroView/KDIntroView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = KDIntroView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		121A3A82F8908DB383013DA0 /* Build configuration list for PBXNativeTarget "KDIntroView-KDIntroView" */ = {
+		3B60213B32EB7EF214E869F4 /* Build configuration list for PBXNativeTarget "Pods-KDIntroView_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FD7F2F8740D420D95F9148F7 /* Debug */,
-				3E69908EC45E4E81C758184E /* Release */,
+				17E53897DC0341AF1CC58783 /* Debug */,
+				411FFF0B3528CED870ECDE3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		48388E02EF2BDD68D24A4860 /* Build configuration list for PBXNativeTarget "Pods-KDIntroView_Example" */ = {
+		5BBB9E76580488FA1CF3E377 /* Build configuration list for PBXNativeTarget "Pods-KDIntroView_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C5DFEF5B05A717285B94A04 /* Debug */,
-				E1FA86EDE597369137CF618D /* Release */,
+				C11A361203A6D4BE32C79582 /* Debug */,
+				7A5E371FAE5F7CA25B8627EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6FA286EA53FB939A4003C250 /* Build configuration list for PBXProject "Pods" */ = {
+		5C72198DEE1410A2C0A394F9 /* Build configuration list for PBXNativeTarget "KDIntroView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				11036BD85FF1D1813E871D31 /* Debug */,
-				A402FD72384C42CD5FC5E4FB /* Release */,
+				DE3132EDA7130F33E3038668 /* Debug */,
+				B06492BB9B1D748E9FE93419 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA9C3448C53BA85D10AE4D46 /* Build configuration list for PBXNativeTarget "Pods-KDIntroView_Tests" */ = {
+		7CBB41B20DB79C7F6BD67C27 /* Build configuration list for PBXNativeTarget "KDIntroView-KDIntroView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8522392D9655767E70C7F2DE /* Debug */,
-				298B35BF9EF32198604CA9CC /* Release */,
+				9ADA79C652384F2BC445BFBF /* Debug */,
+				ABC019C20C05B0BD1D5BE03A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E6C8EF8E8C53ACFF9BE404F6 /* Build configuration list for PBXNativeTarget "KDIntroView" */ = {
+		EF243EB2E9024D152C815F0A /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				519323B301A32A30A6AC9892 /* Debug */,
-				9AA1E5DAD2035E1359510314 /* Release */,
+				29281F9C1BA1385722932691 /* Debug */,
+				36BBCAEBA3ECB40552CFCD58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5F519E4CD181A6E2B5A9E9C8 /* Project object */;
+	rootObject = ADBDB6C891AD5A976A2275C4 /* Project object */;
 }

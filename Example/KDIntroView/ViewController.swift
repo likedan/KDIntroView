@@ -11,7 +11,7 @@ import KDIntroView
 
 class ViewController: UIViewController {
 
-    //var ss = kdi
+    var ss =
     
     override func viewDidLoad() {
         super.viewDidLoad()
