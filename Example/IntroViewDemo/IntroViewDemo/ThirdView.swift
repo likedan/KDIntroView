@@ -74,9 +74,7 @@ class ThirdView: KDIntroView {
             lab1.transform = CGAffineTransformMake(1.4 - (index - 320) / 70, 0, 0, 1.4 - (index - 320) / 70, -(index - 320) * 3, 40 + (index - 320) * (index - 320) / 20)
             lab1.alpha = (420 - index) / 100
         }
-        
-        println(index)
-        
+                
     }
     
 }

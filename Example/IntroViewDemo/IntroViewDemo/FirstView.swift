@@ -23,34 +23,22 @@ class FirstView: KDIntroView {
     @IBOutlet var iconBack: UIImageView!
     @IBOutlet var iconFront: UIImageView!
     
+    //index : 0 ~ view.frame.width
     override func moveEverythingAccordingToIndex(index: CGFloat){
         
-        var stay = CGAffineTransformMakeTranslation(index, 0)
-        var up = CGAffineTransformMakeTranslation(index, -index / 3)
-        var down = CGAffineTransformMakeTranslation(index, index / 3)
-        var speed1 = CGAffineTransformMakeTranslation(-index / 5, -index / 5)
-        var speed2 = CGAffineTransformMakeTranslation(index / 4, -index / 10)
-        var speed3 = CGAffineTransformMakeTranslation(-index / 5, 0)
-        var speed4 = CGAffineTransformMakeTranslation(index / 4, index / 10)
-        var speed5 = CGAffineTransformMakeTranslation(-index / 5, index / 5)
-        var enlarge = CGAffineTransformMake(1 + index / 20, 0, 0, 1 + index / 20, index, 0)
-        
-        lab1.transform = down
-        lab1.alpha = (200 - index) / 200
-        
-        icon.transform = up
+        move(icon, index: index, horizontolSpeed: 0, verticalSpeed: -2 / 5)
         icon.alpha = (200 - index) / 200
         
-        lab2.transform = speed1
+        move(lab1, index: index, horizontolSpeed: 0, verticalSpeed: 2 / 5)
+        lab1.alpha = (200 - index) / 200
         
-        lab3.transform = speed2
+        move(lab2, index: index, horizontolSpeed: -6 / 5, verticalSpeed: -1 / 5)
+        move(lab3, index: index, horizontolSpeed: -3 / 5, verticalSpeed: -1 / 10)
+        move(lab4, index: index, horizontolSpeed: -4 / 5, verticalSpeed: 0)
+        move(lab5, index: index, horizontolSpeed: -3 / 5, verticalSpeed: 1 / 10)
+        move(lab6, index: index, horizontolSpeed: -6 / 5, verticalSpeed: 1 / 5)
         
-        lab4.transform = speed3
-        
-        lab5.transform = speed4
-        
-        lab6.transform = speed5
-        
+        var enlarge = CGAffineTransformMake(1 + index / 20, 0, 0, 1 + index / 20, index, 0)
         if index < 250{
             iconBack.transform = enlarge
             iconBack.alpha = 1
