@@ -1,0 +1,14 @@
+PODS:
+  - KDIntroView (0.1.0)
+
+DEPENDENCIES:
+  - KDIntroView (from `../`)
+
+EXTERNAL SOURCES:
+  KDIntroView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  KDIntroView: 8c1d8ce289f51d47e03be6d8d39ec173ce87ca25
+
+COCOAPODS: 0.38.0.beta.1

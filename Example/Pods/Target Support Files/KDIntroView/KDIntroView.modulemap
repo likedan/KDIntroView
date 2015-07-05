@@ -1,0 +1,6 @@
+framework module KDIntroView {
+  umbrella header "KDIntroView-umbrella.h"
+
+  export *
+  module * { export * }
+}
