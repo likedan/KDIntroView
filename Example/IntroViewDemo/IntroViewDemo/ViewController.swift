@@ -19,6 +19,8 @@ class ViewController: KDIntroViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
+        //setup the introduction view   : number of pages : the nib name of each page
+        setup(views: ["1View"])
     }
 
     override func didReceiveMemoryWarning() {

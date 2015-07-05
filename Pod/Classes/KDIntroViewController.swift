@@ -29,7 +29,7 @@ public class KDIntroViewController: UIViewController, UIScrollViewDelegate{
         dragger.addGestureRecognizer(gestureReco)
     }
     
-    func setup(pageNum: Int, views: [String]){
+    public func setup(views: [String]){
         
         for var index = 0; index < views.count; index++ {
             var introView = NSBundle.mainBundle().loadNibNamed(views[index], owner: self, options: nil)[0] as! KDIntroView
@@ -46,6 +46,8 @@ public class KDIntroViewController: UIViewController, UIScrollViewDelegate{
             }
             
         }
+        pageNum = views.count
+        
     }
     
     func determineCurrentPage(){

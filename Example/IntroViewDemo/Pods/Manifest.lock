@@ -2,16 +2,16 @@ PODS:
   - KDIntroView (0.1.0)
 
 DEPENDENCIES:
-  - KDIntroView (from `../../`)
+  - KDIntroView (from `https://github.com/likedan/KDIntroView`)
 
 EXTERNAL SOURCES:
   KDIntroView:
-    :git: "../../"
+    :git: https://github.com/likedan/KDIntroView
 
 CHECKOUT OPTIONS:
   KDIntroView:
-    :commit: fad4518037752e05c75ec7c110fad0f6536379bf
-    :git: "../../"
+    :commit: 977e8a81db13826fbde67b92e248ba9e9c780b74
+    :git: https://github.com/likedan/KDIntroView
 
 SPEC CHECKSUMS:
   KDIntroView: 3cf7a2af4a8da23e2f68492aff72421b24549eaa

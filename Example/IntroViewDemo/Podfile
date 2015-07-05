@@ -12,6 +12,6 @@ use_frameworks!
 target 'IntroViewDemo' do
     xcodeproj 'IntroViewDemo'
     
-    pod 'KDIntroView', :git => '../../'
+    pod 'KDIntroView', :git => 'https://github.com/likedan/KDIntroView'
 end
 

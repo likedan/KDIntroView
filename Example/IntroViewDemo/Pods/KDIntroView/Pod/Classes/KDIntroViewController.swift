@@ -24,12 +24,12 @@ public class KDIntroViewController: UIViewController, UIScrollViewDelegate{
     public  override func viewWillAppear(animated: Bool) {
         scroller = UIScrollView(frame: view.frame)
         scroller.showsHorizontalScrollIndicator = false
-        
+        dragger = UIView(frame: view.frame)
         var gestureReco = UIPanGestureRecognizer(target: self, action: "dragged:")
         dragger.addGestureRecognizer(gestureReco)
     }
     
-    func setup(pageNum: Int, views: [String]){
+    public func setup(pageNum: Int, views: [String]){
         
         for var index = 0; index < views.count; index++ {
             var introView = NSBundle.mainBundle().loadNibNamed(views[index], owner: self, options: nil)[0] as! KDIntroView
