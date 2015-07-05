@@ -1,0 +1,19 @@
+PODS:
+  - KDIntroView (0.1.0)
+
+DEPENDENCIES:
+  - KDIntroView (from `../../`)
+
+EXTERNAL SOURCES:
+  KDIntroView:
+    :git: "../../"
+
+CHECKOUT OPTIONS:
+  KDIntroView:
+    :commit: fad4518037752e05c75ec7c110fad0f6536379bf
+    :git: "../../"
+
+SPEC CHECKSUMS:
+  KDIntroView: 3cf7a2af4a8da23e2f68492aff72421b24549eaa
+
+COCOAPODS: 0.38.0.beta.1

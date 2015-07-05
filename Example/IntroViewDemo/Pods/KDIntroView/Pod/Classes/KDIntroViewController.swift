@@ -24,7 +24,7 @@ public class KDIntroViewController: UIViewController, UIScrollViewDelegate{
     public  override func viewWillAppear(animated: Bool) {
         scroller = UIScrollView(frame: view.frame)
         scroller.showsHorizontalScrollIndicator = false
-        dragger = UIView(frame: view.frame)
+        
         var gestureReco = UIPanGestureRecognizer(target: self, action: "dragged:")
         dragger.addGestureRecognizer(gestureReco)
     }
