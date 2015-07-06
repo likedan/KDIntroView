@@ -15,8 +15,6 @@ public class KDIntroViewController: UIViewController, UIScrollViewDelegate{
     
     var dragger: UIView!
     
-    var pageNum = 0
-    
     var introViews = [KDIntroView]()
     
     var currentPageNum:Int = 0
@@ -32,13 +30,8 @@ public class KDIntroViewController: UIViewController, UIScrollViewDelegate{
         var gestureReco = UIPanGestureRecognizer(target: self, action: "dragged:")
         dragger.addGestureRecognizer(gestureReco)
         
-        // create default page control
-        if pageControl == nil{
-            pageControl = UIPageControl(frame: CGRectMake(0, 0, 100, 40))
-            pageControl.center = CGPointMake(view.frame.width / 2, view.frame.height * 3 / 4)
-        }
+        
         view.addSubview(scroller)
-        view.addSubview(pageControl)
         view.addSubview(dragger)
     }
     
@@ -47,12 +40,11 @@ public class KDIntroViewController: UIViewController, UIScrollViewDelegate{
         for var index = 0; index < views.count; index++ {
             
             var introView = NSBundle.mainBundle().loadNibNamed(views[index], owner: self, options: nil)[0] as! KDIntroView
-            println(introView.frame)
             introView.center.x = view.center.x + view.frame.width * CGFloat(index)
             scroller.addSubview(introView)
             introViews.append(introView)
             
-            if index == 0{
+            if index == 0 || index == views.count - 1{
                 introView.uppserBound = view.frame.width
                 introView.lowerBound = 0
             }else{
@@ -61,12 +53,24 @@ public class KDIntroViewController: UIViewController, UIScrollViewDelegate{
             }
             
         }
-        pageNum = views.count
+        
+        // create default page control
+        if pageControl == nil{
+            pageControl = UIPageControl(frame: CGRectMake(0, 0, 100, 40))
+            pageControl.backgroundColor = UIColor.clearColor()
+            pageControl.pageIndicatorTintColor = UIColor.grayColor()
+            pageControl.currentPageIndicatorTintColor = UIColor.whiteColor()
+            pageControl.currentPage = 0
+            pageControl.center = CGPointMake(view.frame.width / 2, view.frame.height * 6 / 7)
+        }
+        pageControl.numberOfPages = views.count
+        view.addSubview(pageControl)
+        
         
     }
     
     func determineCurrentPage(){
-        if scroller.contentOffset.x > view.frame.width / 2 + view.frame.width * CGFloat(currentPageNum) && currentPageNum < pageNum{
+        if scroller.contentOffset.x > view.frame.width / 2 + view.frame.width * CGFloat(currentPageNum) && currentPageNum < pageControl.numberOfPages{
             currentPageNum++
         }else if scroller.contentOffset.x < view.frame.width * CGFloat(currentPageNum - 1) + view.frame.width / 2 && currentPageNum > 0{
             currentPageNum--
@@ -86,7 +90,7 @@ public class KDIntroViewController: UIViewController, UIScrollViewDelegate{
             if abs(translation.x) > 30 {
                 if currentPageNum != 0 && translation.x > 0 {
                     currentPageNum--
-                }else if currentPageNum != pageNum - 1 && translation.x < 0{
+                }else if currentPageNum != pageControl.numberOfPages - 1 && translation.x < 0{
                     currentPageNum++
                 }
                 pageControl.currentPage = currentPageNum
