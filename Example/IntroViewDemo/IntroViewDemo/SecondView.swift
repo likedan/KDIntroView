@@ -43,7 +43,6 @@ class SecondView: KDIntroView{
             
             var turnLeft = CGAffineTransformMakeRotation((index - 320) * 3.14 / 320)
             board.transform = turnLeft
-            backgroundColor = UIColor.clearColor()
             
         }else if index >= frame.width * 1.5{
             var turnLeft = CGAffineTransformMakeRotation(3.14 / 2)
@@ -108,12 +107,9 @@ class SecondView: KDIntroView{
             words.alpha =  1 - (index - 320) / 320
             words.transform = speed2
         }
-        if index <= 231{
-            self.superview?.backgroundColor = UIColor.clearColor()
-        }else if index > 231 && index < 320{
-            self.superview?.backgroundColor = UIColor(red: 32.0/255, green: 176.0/255, blue: 140.0/255, alpha: 1)
-            
-        }
+        
+        
+//        UIColor(red: 28, green: 187, blue: 157, alpha: 1)
         
     }
     

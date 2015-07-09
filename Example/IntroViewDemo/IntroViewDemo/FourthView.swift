@@ -50,12 +50,6 @@ class FourthView: KDIntroView {
         var speed2 = CGAffineTransformMakeTranslation(index/4, 0)
         var enlarge = CGAffineTransformMake(1 + index / 20, 0, 0, 1 + index / 20, index, 0)
         
-        if index < 600{
-            self.superview?.backgroundColor = UIColor(red: 143.0/255, green: 205.0/255, blue: 232.0/255, alpha: 1)
-        }else if index >= 600{
-            self.superview?.backgroundColor = UIColor.whiteColor()
-        }
-        
         if index < 200{
             var slideMotion = CGAffineTransformMakeTranslation(-320 + index, 200 - index)
             slideBoard.transform = slideMotion

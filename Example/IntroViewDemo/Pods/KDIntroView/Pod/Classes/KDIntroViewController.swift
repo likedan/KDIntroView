@@ -111,10 +111,29 @@ public class KDIntroViewController: UIViewController, UIScrollViewDelegate{
                 if index >= 2{
                     movingIndex = offset - CGFloat(index - 1) * view.frame.width
                 }
-                println(movingIndex)
                 introViews[index].moveEverythingAccordingToIndex(movingIndex)
             }
+            moveEverythingAccordingToIndex(offset)
         }
+    }
+    //index : 0 ~ scrollview.contentsize
+    public func moveEverythingAccordingToIndex(index: CGFloat){
+        fatalError("Must Override")
+    }
+    
+    public func changeBackgroundColor(index: CGFloat, fromColor: UIColor, toColor: UIColor, fromIndex: CGFloat, toIndex: CGFloat){
+        
+        if index > fromIndex && index < toIndex{
+            let difference = toIndex - fromIndex
+            let fromColorComponent = CGColorGetComponents(fromColor.CGColor)
+            let toColorComponent = CGColorGetComponents(toColor.CGColor)
+
+            let differenceInRed = toColorComponent[0] as CGFloat - fromColorComponent[0] as CGFloat
+            let differenceInGreen = toColorComponent[1] as CGFloat - fromColorComponent[1] as CGFloat
+            let differenceInBlue = toColorComponent[2] as CGFloat - fromColorComponent[2] as CGFloat
+            view.backgroundColor = UIColor(red: fromColorComponent[0] as CGFloat + differenceInRed / difference * (index - fromIndex), green: fromColorComponent[1] as CGFloat + differenceInGreen / difference * (index - fromIndex), blue: fromColorComponent[2] as CGFloat + differenceInBlue / difference * (index - fromIndex), alpha: 1)
+        }
+        
     }
     
 }

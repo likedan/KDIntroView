@@ -19,7 +19,6 @@ public class KDIntroView: UIView {
     public func moveEverythingAccordingToIndex(index: CGFloat) {
         fatalError("Must Override")
     }
-    
     public func still(view: UIView, index: CGFloat){
         view.transform = CGAffineTransformMakeTranslation(index, 0)
     }

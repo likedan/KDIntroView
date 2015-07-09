@@ -39,7 +39,7 @@ class FirstView: KDIntroView {
         move(lab6, index: index, horizontolSpeed: -6 / 5, verticalSpeed: 1 / 5)
         
         var enlarge = CGAffineTransformMake(1 + index / 20, 0, 0, 1 + index / 20, index, 0)
-        if index < 250{
+        if index < frame.width * 0.75 {
             iconBack.transform = enlarge
             iconBack.alpha = 1
         }else{

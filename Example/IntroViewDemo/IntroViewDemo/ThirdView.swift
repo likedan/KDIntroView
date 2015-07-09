@@ -19,11 +19,6 @@ class ThirdView: KDIntroView {
     @IBOutlet var portrait: UILabel!
     @IBOutlet var landscape: UILabel!
     
-    func toInitialState(){
-        
-        self.backgroundColor = UIColor.clearColor()
-        
-    }
     
     //0 - 640
     override func moveEverythingAccordingToIndex(index: CGFloat){
@@ -34,6 +29,7 @@ class ThirdView: KDIntroView {
         
         var enlarge = CGAffineTransformMake(1 + index / 20, 0, 0, 1 + index / 20, index, 0)
         
+        /*
         if index < 100{
             self.superview?.backgroundColor = UIColor(red: 32.0/255, green: 176.0/255, blue: 140.0/255, alpha: 1)
         }else if index > 100 && index < 200{
@@ -41,7 +37,7 @@ class ThirdView: KDIntroView {
         }else if index >= 200{
             self.superview?.backgroundColor = UIColor(red: 143.0/255, green: 205.0/255, blue: 232.0/255, alpha: 1)
         }
-        
+        */
         if index < 200{
             vertical.alpha = 0
             horizontal.alpha = 1
