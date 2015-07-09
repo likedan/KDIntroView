@@ -33,7 +33,13 @@ iOS 8.0
 
 1. 
 create all the views you need as xibs
-link each xib file with a class that ingerit `KDIntroView`
+
+
+link each xib file with a class that inherits `KDIntroView`
+
+
+design your interface as you wish, this framework works for both code generated UI and autolayout
+
 
 ## Author
 
