@@ -19,9 +19,12 @@ public class KDIntroView: UIView {
     public func moveEverythingAccordingToIndex(index: CGFloat) {
         fatalError("Must Override")
     }
+    // the view stays in the same position as user scroll
     public func still(view: UIView, index: CGFloat){
         view.transform = CGAffineTransformMakeTranslation(index, 0)
     }
+    // horizontolSpeed: positive value for moving right, negative value for moving left, 0 for the same speed as scroll view
+    // verticalSpeed: positive value for moving down, negative value for moving up
     public func move(view: UIView, index: CGFloat, horizontolSpeed: CGFloat, verticalSpeed: CGFloat){
         view.transform = CGAffineTransformMakeTranslation(index * (horizontolSpeed + 1), index * verticalSpeed)
     }

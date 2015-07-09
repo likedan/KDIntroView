@@ -55,7 +55,16 @@ In `viewWillAppear`, call `setup`, and pass in an array that contains the name o
 
 Now, you can see your views, but they are static.
 
-override
+
+Step Three
+
+<img src="Imgs/inst2.jpg" width="600" height="500"/>
+
+Implement the ` moveEverythingAccordingToIndex(index: CGFloat)` in each view. The `index: CGFloat` variable is the offset of the scroller. In the first and the last view, `index: CGFloat` range from 0 ~ frame.width. In all the other views, `index: CGFloat` range from 0 ~ 2 * frame.width.
+
+<img src="Imgs/inst2.jpg" width="600" height="400"/>
+
+    We have build-in functions, but you can easily customize your animation with `CGAffineTransformation`. There are more example in the demo project.
 
 ## Author
 
