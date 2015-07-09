@@ -21,8 +21,8 @@ Pod::Spec.new do |s|
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "likedan" => "likedan5@icloud.com" }
-  s.source           = { :git => "https://github.com/likedan/KDIntroView.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/likedan/KDIntroView.git", :tag => "1.1.0" }
+   s.social_media_url = 'https://takefiveinteractive'
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
