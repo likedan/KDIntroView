@@ -62,11 +62,13 @@ Step Three
 
 Implement the `moveEverythingAccordingToIndex(index: CGFloat)` in each view. The `index: CGFloat` variable is the offset of the scroller. In the first and the last view, `index: CGFloat` range from 0 ~ frame.width. In all the other views, `index: CGFloat` range from 0 ~ 2 * frame.width.
 
-<img src="Imgs/inst2.jpg" width="600" height="400"/>
+<img src="Imgs/inst2.jpg" width="600" height="500"/>
 
+We have build-in functions, but you can easily customize your animation with `CGAffineTransformation`. There are more example in the demo project.
 
+Also implement the `moveEverythingAccordingToIndex(index: CGFloat)` in viewcontroller to perform color animation and touchable elements. All the touchable elements must be added in the view controller and call `view.bringSubviewToFront()` after `setup` to make them reachable.
 
-    We have build-in functions, but you can easily customize your animation with `CGAffineTransformation`. There are more example in the demo project.
+You can literally create any kind of animation! Play around with it, and free your imagination!
 
 ## Author
 
