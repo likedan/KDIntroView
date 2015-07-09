@@ -9,19 +9,19 @@
 
 Pod::Spec.new do |s|
   s.name             = "KDIntroView"
-  s.version          = "1.1.0"
-  s.summary          = "A short description of KDIntroView."
+  s.version          = “1.1.1”
+  s.summary          = "KDIntroView is a framework to create dynamic introduction views for App. You can create all sorts of cool animations."
   s.description      = <<-DESC
                        An optional longer description of KDIntroView
 
                        * Markdown format.
                        * Don't worry about the indent, we strip it!
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/KDIntroView"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/likedan/KDIntroView"
+  s.screenshots     = "https://github.com/likedan/KDIntroView/Imgs/showup.git"
   s.license          = 'MIT'
   s.author           = { "likedan" => "likedan5@icloud.com" }
-  s.source           = { :git => "https://github.com/likedan/KDIntroView.git", :tag => "1.1.0" }
+  s.source           = { :git => "https://github.com/likedan/KDIntroView.git", :tag => “1.1.1” }
    s.social_media_url = 'https://takefiveinteractive'
 
   s.platform     = :ios, '8.0'
