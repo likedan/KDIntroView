@@ -22,8 +22,7 @@ class FourthView: KDIntroView {
     var year3: UIButton!
     var year4: UIButton!
     
-    @IBOutlet var begin: UIView!
-    @IBOutlet var beginBut: UIButton!
+    @IBOutlet var slipBoard: UIView!
     @IBOutlet var logo: UIButton!
     
     
@@ -41,7 +40,6 @@ class FourthView: KDIntroView {
         
     }
     
-    //0 - 960
     override func moveEverythingAccordingToIndex(index: CGFloat){
         
         var stay = CGAffineTransformMakeTranslation(index, 0)
@@ -61,6 +59,12 @@ class FourthView: KDIntroView {
             slideBoard.transform = CGAffineTransformMakeTranslation(-320 + index, 0)
         }else if index > 320{
             slideBoard.transform = CGAffineTransformMakeTranslation(-320 + index, (320 - index) * 2)
+        }
+        
+        if index > frame.width * 1.7{
+            slipBoard.backgroundColor = UIColor.clearColor()
+        }else{
+            slipBoard.backgroundColor = UIColor.whiteColor()
         }
         
         if index < 100{
@@ -134,12 +138,7 @@ class FourthView: KDIntroView {
         }else if index >= 400{
             logo.alpha = (index - 400) / 200
         }
-        
-        if index < 500{
-            begin.transform = CGAffineTransformMake(0, 0, 0, 0, 0, 0)
-        }else if index >= 500{
-            begin.transform = CGAffineTransformMake((index - 500) / 120, 0, 0, (index - 500) / 120, 0, 0)
-        }
+
         
     }
 
