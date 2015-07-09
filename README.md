@@ -12,7 +12,7 @@ To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'KDIntroView', :git => 'https://github.com/likedan/KDIntroView'
+pod 'KDIntroView'
 ```
 or drag these files into the project
 
