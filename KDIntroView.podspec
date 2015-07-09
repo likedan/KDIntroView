@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "KDIntroView"
-  s.version          = "0.1.0"
+  s.version          = "1.1.0"
   s.summary          = "A short description of KDIntroView."
   s.description      = <<-DESC
                        An optional longer description of KDIntroView
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "likedan" => "likedan5@icloud.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/KDIntroView.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/likedan/KDIntroView.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '8.0'

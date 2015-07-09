@@ -2,7 +2,6 @@
 
 <img src="Imgs/showup.gif" width="320" height="550"/>
 
-[![CI Status](http://img.shields.io/travis/likedan/KDIntroView.svg?style=flat)](https://travis-ci.org/likedan/KDIntroView)
 [![Version](https://img.shields.io/cocoapods/v/KDIntroView.svg?style=flat)](http://cocoapods.org/pods/KDIntroView)
 [![License](https://img.shields.io/cocoapods/l/KDIntroView.svg?style=flat)](http://cocoapods.org/pods/KDIntroView)
 [![Platform](https://img.shields.io/cocoapods/p/KDIntroView.svg?style=flat)](http://cocoapods.org/pods/KDIntroView)
