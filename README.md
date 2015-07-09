@@ -5,24 +5,36 @@
 [![License](https://img.shields.io/cocoapods/l/KDIntroView.svg?style=flat)](http://cocoapods.org/pods/KDIntroView)
 [![Platform](https://img.shields.io/cocoapods/p/KDIntroView.svg?style=flat)](http://cocoapods.org/pods/KDIntroView)
 
-## Usage
+## Installation
+
+To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod 'KDIntroView', :git => 'https://github.com/likedan/KDIntroView'
+```
+or drag these files into the project
+
+```ruby
+KDIntroView.swift
+KDIntroViewController.swift
+```
+
+## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+iOS 8.0
 
-## Installation
+## Introduction
+`KDIntroView` is a framework to create dynamic introduction views for App. 
 
-KDIntroView is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
 
-```ruby
-pod "KDIntroView"
-```
 
 ## Author
 
-likedan, likedan5@icloud.com
+Kedan Li, TakefiveInteractive.com
 
 ## License
 
