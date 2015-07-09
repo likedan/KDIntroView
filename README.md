@@ -26,12 +26,14 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Requirements
 iOS 8.0
 
-
-
 ## Introduction
-`KDIntroView` is a framework to create dynamic introduction views for App. 
+`KDIntroView` is a framework to create dynamic introduction views for App. You can create all sorts of cool animations.
 
+## Start!!!
 
+1. 
+create all the views you need as xibs
+link each xib file with a class that ingerit `KDIntroView`
 
 ## Author
 
