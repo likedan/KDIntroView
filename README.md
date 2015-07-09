@@ -34,20 +34,28 @@ iOS 8.0
 Step One
 
 
-Create all the views you need as xibs. Link each xib file with a class that inherits `KDIntroView`. Override `override func moveEverythingAccordingToIndex(index: CGFloat)` this function.
+Create all the views you need as xibs. Link each xib file with a class that inherits `KDIntroView`. Override ` moveEverythingAccordingToIndex(index: CGFloat)`.
 
 
 
 Design your interface as you wish. This framework works for both code generated UI and autolayout.
 
+Make sure each view has a clear background color if you wish to perform color change.
+
 
 
 Step Two
 
-<img src="Imgs/inst1.jpg" width="700" height="300"/>
+<img src="Imgs/inst1.jpg" width="700" height="220"/>
 
 Create a ViewController that inherits `KDIntroViewController`. (don't forget to import KDIntroView)
 
+
+In `viewWillAppear`, call `setup`, and pass in an array that contains the name of all the xibs you created. Arrange them in the order you with them to appear. Override ` moveEverythingAccordingToIndex(index: CGFloat)`.
+
+Now, you can see your views, but they are static.
+
+override
 
 ## Author
 
@@ -56,3 +64,4 @@ Kedan Li, TakefiveInteractive.com
 ## License
 
 KDIntroView is available under the MIT license. See the LICENSE file for more info.
+
