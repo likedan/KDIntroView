@@ -1,6 +1,6 @@
 # KDIntroView
 
-<img src="showup.gif" width="320" height="550"/>
+<img src="Imgs/showup.gif" width="320" height="550"/>
 
 [![CI Status](http://img.shields.io/travis/likedan/KDIntroView.svg?style=flat)](https://travis-ci.org/likedan/KDIntroView)
 [![Version](https://img.shields.io/cocoapods/v/KDIntroView.svg?style=flat)](http://cocoapods.org/pods/KDIntroView)
@@ -31,14 +31,22 @@ iOS 8.0
 
 ## Start!!!
 
-1. 
-create all the views you need as xibs
+Step One
 
 
-link each xib file with a class that inherits `KDIntroView`
+Create all the views you need as xibs. Link each xib file with a class that inherits `KDIntroView`. Override `override func moveEverythingAccordingToIndex(index: CGFloat)` this function.
 
 
-design your interface as you wish, this framework works for both code generated UI and autolayout
+
+Design your interface as you wish. This framework works for both code generated UI and autolayout.
+
+
+
+Step Two
+
+<img src="Imgs/inst1.jpg" width="700" height="300"/>
+
+Create a ViewController that inherits `KDIntroViewController`. (don't forget to import KDIntroView)
 
 
 ## Author
