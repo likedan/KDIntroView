@@ -42,12 +42,12 @@ Make sure each view has a clear background color if you wish to perform color ch
 
 Step Two
 
-<img src="Imgs/inst1.jpg" width="700" height="220"/>
+<img src="Imgs/inst1.png" width="900" height="260"/>
 
 Create a ViewController that inherits `KDIntroViewController`. (don't forget to import KDIntroView)
 
 
-In `viewWillAppear`, call `setup`, and pass in an array that contains the name of all the xibs you created. Arrange them in the order you with them to appear. Override ` moveEverythingAccordingToIndex(index: CGFloat)`.
+In `viewDidAppear`, call `setup`, and pass in an array that contains the name of all the xibs you created. Arrange them in the order you with them to appear. Override ` moveEverythingAccordingToIndex(index: CGFloat)`.
 
 Now, you can see your views, but they are static.
 

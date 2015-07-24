@@ -20,12 +20,10 @@ class ViewController: KDIntroViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        
+    override func viewDidAppear(animated: Bool) {
         //setup the introduction view   : number of pages : the nib name of each page
         setup(["1View","2View","3View","4View","5View"])
-
+        
         view.bringSubviewToFront(beginButtonView)
     }
 
