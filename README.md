@@ -2,9 +2,6 @@
 
 <img src="Imgs/showup.gif" width="320" height="550"/>
 
-[![Version](https://img.shields.io/cocoapods/v/KDIntroView.svg?style=flat)](http://cocoapods.org/pods/KDIntroView)
-[![License](https://img.shields.io/cocoapods/l/KDIntroView.svg?style=flat)](http://cocoapods.org/pods/KDIntroView)
-[![Platform](https://img.shields.io/cocoapods/p/KDIntroView.svg?style=flat)](http://cocoapods.org/pods/KDIntroView)
 
 ## Installation
 
