@@ -40,7 +40,7 @@ public class KDIntroViewController: UIViewController, UIScrollViewDelegate{
         for var index = 0; index < views.count; index++ {
             
             var introView = NSBundle.mainBundle().loadNibNamed(views[index], owner: self, options: nil)[0] as! KDIntroView
-            introView.center.x = view.center.x + view.frame.width * CGFloat(index)
+            introView.frame = CGRectMake(CGFloat(index) * view.frame.width, 0, view.frame.width, view.frame.height)
             scroller.addSubview(introView)
             introViews.append(introView)
             
