@@ -27,7 +27,7 @@ public class KDIntroViewController: UIViewController, UIScrollViewDelegate{
         scroller.delegate = self
         dragger = UIView(frame: view.frame)
         dragger.backgroundColor = UIColor.clearColor()
-        var gestureReco = UIPanGestureRecognizer(target: self, action: "dragged:")
+        let gestureReco = UIPanGestureRecognizer(target: self, action: "dragged:")
         dragger.addGestureRecognizer(gestureReco)
         
         
@@ -39,8 +39,8 @@ public class KDIntroViewController: UIViewController, UIScrollViewDelegate{
         
         for var index = 0; index < views.count; index++ {
             
-            var introView = NSBundle.mainBundle().loadNibNamed(views[index], owner: self, options: nil)[0] as! KDIntroView
-            introView.frame = CGRectMake(CGFloat(index) * view.frame.width, 0, view.frame.width, view.frame.height)
+            let introView = NSBundle.mainBundle().loadNibNamed(views[index], owner: self, options: nil)[0] as! KDIntroView
+            introView.center.x = view.center.x + view.frame.width * CGFloat(index)
             scroller.addSubview(introView)
             introViews.append(introView)
             
@@ -103,7 +103,7 @@ public class KDIntroViewController: UIViewController, UIScrollViewDelegate{
     
     public func scrollViewDidScroll(scrollView: UIScrollView) {
         
-        var offset = scroller.contentOffset.x
+        let offset = scroller.contentOffset.x
         
         for var index = 0; index < introViews.count; index++ {
             if introViews[index].isInBound(offset){
