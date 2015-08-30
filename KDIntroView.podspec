@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "KDIntroView"
-  s.version          = "1.1.1"
+  s.version          = "1.1.2"
   s.summary          = "KDIntroView is a framework to create dynamic introduction views for App. You can create all sorts of cool animations."
 
   s.description      = <<-DESC
