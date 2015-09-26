@@ -27,7 +27,7 @@ iOS 8.0
 
 ## Start!!!
 
-Step One
+- Step One
 
 
 Create all the views you need as xibs. Link each xib file with a class that inherits `KDIntroView`. Override ` moveEverythingAccordingToIndex(index: CGFloat)`.
@@ -40,7 +40,7 @@ Make sure each view has a clear background color if you wish to perform color ch
 
 
 
-Step Two
+- Step Two
 
 <img src="Imgs/inst1.png" width="900" height="260"/>
 
@@ -52,7 +52,7 @@ In `viewDidAppear`, call `setup`, and pass in an array that contains the name of
 Now, you can see your views, but they are static.
 
 
-Step Three
+- Step Three
 
 <img src="Imgs/inst2.jpg" width="600" height="500"/>
 
