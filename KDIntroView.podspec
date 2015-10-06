@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "KDIntroView"
-  s.version          = “1.1.4”
+  s.version          = "1.1.4"
   s.summary          = "KDIntroView is a framework to create dynamic introduction views for App. You can create all sorts of cool animations."
 
   s.description      = <<-DESC
@@ -44,7 +44,7 @@ You can literally create any kind of animation! Play around with it, and free yo
   s.homepage         = "https://github.com/likedan/KDIntroView"
   s.license          = 'MIT'
   s.author           = { "likedan" => "likedan5@icloud.com" }
-  s.source           = { :git => "https://github.com/likedan/KDIntroView.git", :tag => "1.1.1" }
+  s.source           = { :git => "https://github.com/likedan/KDIntroView.git", :tag => "1.1.4" }
    s.social_media_url = 'http://takefiveinteractive.com'
 
   s.platform     = :ios, '8.0'
