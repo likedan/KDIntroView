@@ -24,8 +24,8 @@ class ThirdView: KDIntroView {
     override func moveEverythingAccordingToIndex(index: CGFloat){
         
         var stay = CGAffineTransformMakeTranslation(index, 0)
-        var turn = CGAffineTransformMake(1 - (index - 250) / 70, (index - 250) / 70 - (index - 250) / 210, -(index - 250) / 70 + (index - 250) / 210, 1 - (index - 250) / 70, (index - 250), (index - 250) * 2.0)
-        var transform = CGAffineTransformMake(1 - (index - 250) / 210, 0, 0, 1 - (index - 250) / 210, -(index - 250) / 2, -(index - 250) / 3)
+        let turn = CGAffineTransformMake(1 - (index - 250) / 70, (index - 250) / 70 - (index - 250) / 210, -(index - 250) / 70 + (index - 250) / 210, 1 - (index - 250) / 70, (index - 250), (index - 250) * 2.0)
+        let transform = CGAffineTransformMake(1 - (index - 250) / 210, 0, 0, 1 - (index - 250) / 210, -(index - 250) / 2, -(index - 250) / 3)
         
         var enlarge = CGAffineTransformMake(1 + index / 20, 0, 0, 1 + index / 20, index, 0)
         

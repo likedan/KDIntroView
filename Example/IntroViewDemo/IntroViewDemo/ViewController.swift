@@ -45,7 +45,7 @@ class ViewController: KDIntroViewController {
         
         if index >= view.frame.width * 3.75 && index <= view.frame.width * 4{
             
-            println(index - view.frame.width * 3.75)
+            print(index - view.frame.width * 3.75)
             
             beginButtonView.transform = CGAffineTransformMake((index - view.frame.width * 3.75) * 2 / 150, 0, 0, (index - view.frame.width * 3.75) * 2 / 150, 0, 160 - (index - view.frame.width * 3.75) * 2)
         }else{

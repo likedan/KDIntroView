@@ -28,7 +28,7 @@ class FourthView: KDIntroView {
     
     @IBOutlet var slideBoard: UIView!
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         addYears()
     }
