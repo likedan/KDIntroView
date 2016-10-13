@@ -20,10 +20,10 @@ open class KDIntroView: UIView {
         fatalError("Must Override")
     }
     open func still(view: UIView, index: CGFloat){
-        view.transform = CGAffineTransformMakeTranslation(index, 0)
+        view.transform = CGAffineTransform(translationX: index, y: 0)
     }
     open func move(view: UIView, index: CGFloat, horizontolSpeed: CGFloat, verticalSpeed: CGFloat){
-        view.transform = CGAffineTransformMakeTranslation(index * (horizontolSpeed + 1), index * verticalSpeed)
+        view.transform = CGAffineTransform(translationX: index * (horizontolSpeed + 1), y: index * verticalSpeed)
     }
     
     func isInBound(num: CGFloat)->Bool{
