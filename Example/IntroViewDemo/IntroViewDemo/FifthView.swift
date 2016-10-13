@@ -14,7 +14,7 @@ class FifthView: KDIntroView {
     //empty view
     // use to perform the vertical movement
     
-    override func moveEverythingAccordingToIndex(index: CGFloat) {
+    override func moveEverythingAccordingToIndex(_ index: CGFloat) {
 
     }
     /*

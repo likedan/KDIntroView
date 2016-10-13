@@ -30,22 +30,22 @@ class SecondView: KDIntroView{
     @IBOutlet var choice9: UIImageView!
     
     //index : 0 ~ 2 * view.frame.width
-    override func moveEverythingAccordingToIndex(index: CGFloat){
+    override func moveEverythingAccordingToIndex(_ index: CGFloat){
         
         if index < frame.width / 2{
             //movement of the board
-            var enlarge = CGAffineTransformMake(4 * index / (frame.width * 2), 0, 0, 4 * index / (frame.width * 2), -frame.width + index, board.frame.height - index * board.frame.height / (frame.width / 2))
+            let enlarge = CGAffineTransform(a: 4 * index / (frame.width * 2), b: 0, c: 0, d: 4 * index / (frame.width * 2), tx: -frame.width + index, ty: board.frame.height - index * board.frame.height / (frame.width / 2))
             board.transform = enlarge
         }else if index >= frame.width / 2 && index <= frame.width{
-            var enlarge = CGAffineTransformMake(1, 0, 0, 1, -320 + index, 0)
+            let enlarge = CGAffineTransform(a: 1, b: 0, c: 0, d: 1, tx: -320 + index, ty: 0)
             board.transform = enlarge
         }else if index > frame.width && index < frame.width * 1.5{
             
-            var turnLeft = CGAffineTransformMakeRotation((index - 320) * 3.14 / 320)
+            let turnLeft = CGAffineTransform(rotationAngle: (index - 320) * 3.14 / 320)
             board.transform = turnLeft
             
         }else if index >= frame.width * 1.5{
-            var turnLeft = CGAffineTransformMakeRotation(3.14 / 2)
+            let turnLeft = CGAffineTransform(rotationAngle: 3.14 / 2)
             board.transform = turnLeft
         }
         
@@ -75,27 +75,27 @@ class SecondView: KDIntroView{
         if index <= 0.75 * frame.width {
             redo1.alpha = 0
         } else if index > 0.75 * frame.width && index < 0.9 * frame.width{
-            var shrink = CGAffineTransformMake((0.9 * frame.width - index) / 2, 0, 0, (0.9 * frame.width - index) / 2, 0, 0)
+            let shrink = CGAffineTransform(a: (0.9 * frame.width - index) / 2, b: 0, c: 0, d: (0.9 * frame.width - index) / 2, tx: 0, ty: 0)
             redo1.alpha = (index - 0.75 * frame.width) / 40
             redo1.transform = shrink
         } else if index >= 0.9 * frame.width && index <= frame.width {
             redo1.alpha = 1
-            var shrink = CGAffineTransformMake(1, 0, 0, 1, 0, 0)
+            let shrink = CGAffineTransform(a: 1, b: 0, c: 0, d: 1, tx: 0, ty: 0)
             redo1.transform = shrink
         }
         
-        var speed1 = CGAffineTransformMakeTranslation(-(index - frame.width)/4, 0)
-        var speed2 = CGAffineTransformMakeTranslation((index - frame.width)/4, 0)
+        let speed1 = CGAffineTransform(translationX: -(index - frame.width)/4, y: 0)
+        let speed2 = CGAffineTransform(translationX: (index - frame.width)/4, y: 0)
         
         if index <= 260 {
             redo2.alpha = 0
         } else if index > 260 && index < 300{
-            var shrink = CGAffineTransformMake((301 - index) / 2, 0, 0, (301 - index) / 2, 0, 0)
+            let shrink = CGAffineTransform(a: (301 - index) / 2, b: 0, c: 0, d: (301 - index) / 2, tx: 0, ty: 0)
             redo2.alpha = (index - 260) / 40
             redo2.transform = shrink
         }else if index >= 300 && index <= 320 {
             redo2.alpha = 1
-            var shrink = CGAffineTransformMake(1, 0, 0, 1, 0, 0)
+            let shrink = CGAffineTransform(a: 1, b: 0, c: 0, d: 1, tx: 0, ty: 0)
             redo2.transform = shrink
         }else if index > 320{
             redo2.transform = speed1

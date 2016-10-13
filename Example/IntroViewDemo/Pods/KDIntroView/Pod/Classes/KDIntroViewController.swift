@@ -131,7 +131,7 @@ open class KDIntroViewController: UIViewController, UIScrollViewDelegate{
             let differenceInRed = ((toColorComponent?[0])! as CGFloat) - (fromColorComponent?[0])! as CGFloat
             let differenceInGreen = ((toColorComponent?[1])! as CGFloat) - (fromColorComponent?[1])! as CGFloat
             let differenceInBlue = ((toColorComponent?[2])! as CGFloat) - (fromColorComponent?[2])! as CGFloat
-            view.backgroundColor = UIColor(red: (fromColorComponent?[0])! as CGFloat + differenceInRed / difference * (index - fromIndex), green: fromColorComponent?[1] as CGFloat + differenceInGreen / difference * (index - fromIndex), blue: fromColorComponent?[2] as CGFloat + differenceInBlue / difference * (index - fromIndex), alpha: 1)
+            view.backgroundColor = UIColor(red: (fromColorComponent?[0])! as CGFloat + differenceInRed / difference * (index - fromIndex), green: (fromColorComponent?[1])! as CGFloat + differenceInGreen / difference * (index - fromIndex), blue: (fromColorComponent?[2])! as CGFloat + differenceInBlue / difference * (index - fromIndex), alpha: 1)
         }
         
     }
