@@ -20,7 +20,7 @@ open class KDIntroViewController: UIViewController, UIScrollViewDelegate{
     var currentPageNum:Int = 0
     
     
-    open override func viewWillAppear(animated: Bool) {
+    open override func viewWillAppear(_ animated: Bool) {
         // initialization
         scroller = UIScrollView(frame: view.frame)
         scroller.showsHorizontalScrollIndicator = false
@@ -39,11 +39,11 @@ open class KDIntroViewController: UIViewController, UIScrollViewDelegate{
         
         for index in 0 ..< views.count {
             
-            let introView = Boundle.main.loadNibNamed(views[index], owner: self, options: nil)[0] as! KDIntroView
-//            introView.center.x = view.center.x + view.frame.width * CGFloat(index)
-            introView.frame = CGRectMake(CGFloat(index) * view.frame.width, 0, view.frame.width, view.frame.height)
+            let introView = Bundle.main.loadNibNamed(views[index], owner: self, options: nil)?[0] as! KDIntroView
+            //            introView.center.x = view.center.x + view.frame.width * CGFloat(index)
+            introView.frame = CGRect(x: CGFloat(index) * view.frame.width, y: 0, width: view.frame.width, height: view.frame.height)
             scroller.addSubview(introView)
-
+            
             introViews.append(introView)
             
             if index == 0 || index == views.count - 1{
@@ -58,12 +58,12 @@ open class KDIntroViewController: UIViewController, UIScrollViewDelegate{
         
         // create default page control
         if pageControl == nil{
-            pageControl = UIPageControl(frame: CGRectMake(0, 0, 100, 40))
+            pageControl = UIPageControl(frame: CGRect(x: 0, y: 0, width: 100, height: 40))
             pageControl.backgroundColor = UIColor.clear
             pageControl.pageIndicatorTintColor = UIColor.gray
             pageControl.currentPageIndicatorTintColor = UIColor.white
             pageControl.currentPage = 0
-            pageControl.center = CGPointMake(view.frame.width / 2, view.frame.height * 6 / 7)
+            pageControl.center = CGPoint(x: view.frame.width / 2, y: view.frame.height * 6 / 7)
         }
         pageControl.numberOfPages = views.count
         view.addSubview(pageControl)
@@ -78,14 +78,14 @@ open class KDIntroViewController: UIViewController, UIScrollViewDelegate{
             currentPageNum -= 1
         }
         pageControl.currentPage = currentPageNum
-        scroller.setContentOffset(CGPointMake(view.frame.width * CGFloat(currentPageNum), 0), animated: true)
+        scroller.setContentOffset(CGPoint(x: view.frame.width * CGFloat(currentPageNum), y: 0), animated: true)
     }
     
     
     func dragged(recognizer : UIPanGestureRecognizer) {
         
         let translation = recognizer.translation(in: self.view)
-        scroller.setContentOffset(CGPointMake(view.frame.width * CGFloat(currentPageNum) - translation.x, 0), animated: false)
+        scroller.setContentOffset(CGPoint(x: view.frame.width * CGFloat(currentPageNum) - translation.x, y: 0), animated: false)
         
         if recognizer.state == UIGestureRecognizerState.cancelled || recognizer.state == UIGestureRecognizerState.failed || recognizer.state == UIGestureRecognizerState.ended {
             // should change page
@@ -97,7 +97,7 @@ open class KDIntroViewController: UIViewController, UIScrollViewDelegate{
                 }
                 pageControl.currentPage = currentPageNum
             }
-            scroller.setContentOffset(CGPointMake(view.frame.width * CGFloat(currentPageNum), 0), animated: true)
+            scroller.setContentOffset(CGPoint(x: view.frame.width * CGFloat(currentPageNum), y: 0), animated: true)
             
         }
         
@@ -108,14 +108,14 @@ open class KDIntroViewController: UIViewController, UIScrollViewDelegate{
         let offset = scroller.contentOffset.x
         
         for index in 0 ..< introViews.count {
-            if introViews[index].isInBound(offset){
+            if introViews[index].isInBound(num: offset){
                 var movingIndex = offset
                 if index >= 2{
                     movingIndex = offset - CGFloat(index - 1) * view.frame.width
                 }
-                introViews[index].moveEverythingAccordingToIndex(movingIndex)
+                introViews[index].moveEverythingAccordingToIndex(index: movingIndex)
             }
-            moveEverythingAccordingToIndex(offset)
+            moveEverythingAccordingToIndex(index: offset)
         }
     }
     //index : 0 ~ scrollview.contentsize
@@ -127,8 +127,8 @@ open class KDIntroViewController: UIViewController, UIScrollViewDelegate{
         
         if index > fromIndex && index < toIndex{
             let difference = toIndex - fromIndex
-            let fromColorComponent = fromColor.cgColor.components
-            let toColorComponent = toColor.cgColor.components
+            let fromColorComponent = fromColor.cgColor.components!
+            let toColorComponent = toColor.cgColor.components!
             
             let differenceInRed = toColorComponent[0] as CGFloat - fromColorComponent[0] as CGFloat
             let differenceInGreen = toColorComponent[1] as CGFloat - fromColorComponent[1] as CGFloat
