@@ -8,10 +8,10 @@
 
 import UIKit
 
-public class KDIntroViewController: UIViewController, UIScrollViewDelegate{
+open class KDIntroViewController: UIViewController, UIScrollViewDelegate{
     
-    public var scroller: UIScrollView!
-    public var pageControl: UIPageControl!
+    open var scroller: UIScrollView!
+    open var pageControl: UIPageControl!
     
     var dragger: UIView!
     
@@ -20,7 +20,7 @@ public class KDIntroViewController: UIViewController, UIScrollViewDelegate{
     var currentPageNum:Int = 0
     
     
-    public override func viewWillAppear(animated: Bool) {
+    open override func viewWillAppear(animated: Bool) {
         // initialization
         scroller = UIScrollView(frame: view.frame)
         scroller.showsHorizontalScrollIndicator = false
@@ -35,7 +35,7 @@ public class KDIntroViewController: UIViewController, UIScrollViewDelegate{
         view.addSubview(dragger)
     }
     
-    public func setup(views: [String]){
+    open func setup(views: [String]){
         
         for var index = 0; index < views.count; index++ {
             
@@ -103,7 +103,7 @@ public class KDIntroViewController: UIViewController, UIScrollViewDelegate{
         
     }
     
-    public func scrollViewDidScroll(scrollView: UIScrollView) {
+    open func scrollViewDidScroll(scrollView: UIScrollView) {
         
         let offset = scroller.contentOffset.x
         
@@ -119,11 +119,11 @@ public class KDIntroViewController: UIViewController, UIScrollViewDelegate{
         }
     }
     //index : 0 ~ scrollview.contentsize
-    public func moveEverythingAccordingToIndex(index: CGFloat){
+    open func moveEverythingAccordingToIndex(index: CGFloat){
         fatalError("Must Override")
     }
     
-    public func changeBackgroundColor(index: CGFloat, fromColor: UIColor, toColor: UIColor, fromIndex: CGFloat, toIndex: CGFloat){
+    open func changeBackgroundColor(index: CGFloat, fromColor: UIColor, toColor: UIColor, fromIndex: CGFloat, toIndex: CGFloat){
         
         if index > fromIndex && index < toIndex{
             let difference = toIndex - fromIndex
