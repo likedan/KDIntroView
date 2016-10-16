@@ -44,10 +44,10 @@ You can literally create any kind of animation! Play around with it, and free yo
   s.homepage         = "https://github.com/likedan/KDIntroView"
   s.license          = 'MIT'
   s.author           = { "likedan" => "likedan5@icloud.com" }
-  s.source           = { :git => "https://github.com/likedan/KDIntroView.git", :tag => "1.1.4" }
+  s.source           = { :git => "https://github.com/likedan/KDIntroView.git", :tag => "1.1.5" }
    s.social_media_url = 'http://takefiveinteractive.com'
 
-  s.platform     = :ios, '8.0'
+  s.platform     = :ios, '10.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/*.swift'
@@ -55,7 +55,4 @@ You can literally create any kind of animation! Play around with it, and free yo
     'KDIntroView' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
