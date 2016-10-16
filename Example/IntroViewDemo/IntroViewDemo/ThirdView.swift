@@ -21,13 +21,19 @@ class ThirdView: KDIntroView {
     
     
     //0 - 640
-    override func moveEverythingAccordingToIndex(index: CGFloat){
+    override func moveEverythingAccordingToIndex(_ index: CGFloat){
         
-        var stay = CGAffineTransformMakeTranslation(index, 0)
-        let turn = CGAffineTransformMake(1 - (index - 250) / 70, (index - 250) / 70 - (index - 250) / 210, -(index - 250) / 70 + (index - 250) / 210, 1 - (index - 250) / 70, (index - 250), (index - 250) * 2.0)
-        let transform = CGAffineTransformMake(1 - (index - 250) / 210, 0, 0, 1 - (index - 250) / 210, -(index - 250) / 2, -(index - 250) / 3)
+        _ = CGAffineTransform(translationX: index, y: 0)
+        let offset = index - 250
+        let turn = CGAffineTransform(a: 1 - offset / 70,
+                                     b: offset / 70 - offset / 210,
+                                     c: -offset / 70 + offset / 210,
+                                     d: 1 - offset / 70,
+                                     tx: offset,
+                                     ty: offset * 2.0)
+        let transform = CGAffineTransform(a: 1 - (index - 250) / 210, b: 0, c: 0, d: 1 - (index - 250) / 210, tx: -(index - 250) / 2, ty: -(index - 250) / 3)
         
-        var enlarge = CGAffineTransformMake(1 + index / 20, 0, 0, 1 + index / 20, index, 0)
+        _ = CGAffineTransform(a: 1 + index / 20, b: 0, c: 0, d: 1 + index / 20, tx: index, ty: 0) //enlarge
         
         /*
         if index < 100{
@@ -41,8 +47,8 @@ class ThirdView: KDIntroView {
         if index < 200{
             vertical.alpha = 0
             horizontal.alpha = 1
-            vertical.transform = CGAffineTransformMake(1, 0, 0, 1, 0, 0)
-            horizontal.transform = CGAffineTransformMake(1, 0, 0, 1, 0, 0)
+            vertical.transform = CGAffineTransform(a: 1, b: 0, c: 0, d: 1, tx: 0, ty: 0)
+            horizontal.transform = CGAffineTransform(a: 1, b: 0, c: 0, d: 1, tx: 0, ty: 0)
         }else if index > 250 && index <= 320 {
             vertical.transform = turn
             vertical.alpha = (index - 250) / 70
@@ -51,8 +57,14 @@ class ThirdView: KDIntroView {
             landscape.alpha = (index - 250) / 70
             
         }else if index > 320{
-            vertical.transform = CGAffineTransformMake(0, 0.6777777, -0.6777777, 0, 70, 140 + -(index - 320) * (index - 320) / 30)
-            horizontal.transform = CGAffineTransformMake(0.6777777, 0, 0, 0.6777777, -35, -23.333 + (index - 320) * (index - 320) / 20)
+            let offset = index - 320
+            vertical.transform = CGAffineTransform(a: 0,
+                                                   b: 0.6777777,
+                                                   c: -0.6777777,
+                                                   d: 0,
+                                                   tx: 70,
+                                                   ty: 140 + -offset * offset / 30)
+            horizontal.transform = CGAffineTransform(a: 0.6777777, b: 0, c: 0, d: 0.6777777, tx: -35, ty: -23.333 + (index - 320) * (index - 320) / 20)
             
             vertical.alpha =  1 - (index - 320) / 100
             horizontal.alpha = 1 - (index - 320) / 100
@@ -61,13 +73,13 @@ class ThirdView: KDIntroView {
         }
         
         if index <= 280{
-            lab1.transform = CGAffineTransformMake(1, 0, 0, 1, 0, 0)
+            lab1.transform = CGAffineTransform(a: 1, b: 0, c: 0, d: 1, tx: 0, ty: 0)
             lab1.alpha = 1
         }else if index > 280 && index < 320{
-            lab1.transform = CGAffineTransformMake(1 + (index - 280) / 100, 0, 0, 1 + (index - 280) / 100, 0, index - 280)
+            lab1.transform = CGAffineTransform(a: 1 + (index - 280) / 100, b: 0, c: 0, d: 1 + (index - 280) / 100, tx: 0, ty: index - 280)
             lab1.alpha = 1
         }else if index >= 320 {
-            lab1.transform = CGAffineTransformMake(1.4 - (index - 320) / 70, 0, 0, 1.4 - (index - 320) / 70, -(index - 320) * 3, 40 + (index - 320) * (index - 320) / 20)
+            lab1.transform = CGAffineTransform(a: 1.4 - (index - 320) / 70, b: 0, c: 0, d: 1.4 - (index - 320) / 70, tx: -(index - 320) * 3, ty: 40 + (index - 320) * (index - 320) / 20)
             lab1.alpha = (420 - index) / 100
         }
                 

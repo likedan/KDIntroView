@@ -24,7 +24,7 @@ class FirstView: KDIntroView {
     @IBOutlet var iconFront: UIImageView!
     
     //index : 0 ~ view.frame.width
-    override func moveEverythingAccordingToIndex(index: CGFloat){
+    override func moveEverythingAccordingToIndex(_ index: CGFloat){
         
         move(icon, index: index, horizontolSpeed: 0, verticalSpeed: -2 / 5)
         icon.alpha = (200 - index) / 200
@@ -38,7 +38,7 @@ class FirstView: KDIntroView {
         move(lab5, index: index, horizontolSpeed: -3 / 5, verticalSpeed: 1 / 10)
         move(lab6, index: index, horizontolSpeed: -6 / 5, verticalSpeed: 1 / 5)
         
-        var enlarge = CGAffineTransformMake(1 + index / 20, 0, 0, 1 + index / 20, index, 0)
+        let enlarge = CGAffineTransform(a: 1 + index / 20, b: 0, c: 0, d: 1 + index / 20, tx: index, ty: 0)
         
         if index < frame.width * 0.75 {
             iconBack.transform = enlarge
