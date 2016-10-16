@@ -27,7 +27,7 @@ open class KDIntroViewController: UIViewController, UIScrollViewDelegate{
         scroller.delegate = self
         dragger = UIView(frame: view.frame)
         dragger.backgroundColor = UIColor.clear
-        let gestureReco = UIPanGestureRecognizer(target: self, action: "dragged:")
+        let gestureReco = UIPanGestureRecognizer(target: self, action: #selector(KDIntroViewController.dragged(_:)))
         dragger.addGestureRecognizer(gestureReco)
         
         
@@ -35,15 +35,13 @@ open class KDIntroViewController: UIViewController, UIScrollViewDelegate{
         view.addSubview(dragger)
     }
     
-    open func setup(views: [String]){
+    open func setup(_ views: [String]){
         
         for index in 0 ..< views.count {
             
             let introView = Bundle.main.loadNibNamed(views[index], owner: self, options: nil)?[0] as! KDIntroView
-            //            introView.center.x = view.center.x + view.frame.width * CGFloat(index)
-            introView.frame = CGRect(x: CGFloat(index) * view.frame.width, y: 0, width: view.frame.width, height: view.frame.height)
+            introView.center.x = view.center.x + view.frame.width * CGFloat(index)
             scroller.addSubview(introView)
-            
             introViews.append(introView)
             
             if index == 0 || index == views.count - 1{
@@ -82,12 +80,12 @@ open class KDIntroViewController: UIViewController, UIScrollViewDelegate{
     }
     
     
-    func dragged(recognizer : UIPanGestureRecognizer) {
+    func dragged(_ recognizer : UIPanGestureRecognizer) {
         
         let translation = recognizer.translation(in: self.view)
         scroller.setContentOffset(CGPoint(x: view.frame.width * CGFloat(currentPageNum) - translation.x, y: 0), animated: false)
         
-        if recognizer.state == UIGestureRecognizerState.cancelled || recognizer.state == UIGestureRecognizerState.failed || recognizer.state == UIGestureRecognizerState.ended {
+        if recognizer.state == UIGestureRecognizerState.cancelled || recognizer.state == UIGestureRecognizerState.failed || recognizer.state == UIGestureRecognizerState.ended{
             // should change page
             if abs(translation.x) > 30 {
                 if currentPageNum != 0 && translation.x > 0 {
@@ -103,37 +101,37 @@ open class KDIntroViewController: UIViewController, UIScrollViewDelegate{
         
     }
     
-    open func scrollViewDidScroll(scrollView: UIScrollView) {
+    open func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         let offset = scroller.contentOffset.x
         
         for index in 0 ..< introViews.count {
-            if introViews[index].isInBound(num: offset){
+            if introViews[index].isInBound(offset){
                 var movingIndex = offset
                 if index >= 2{
                     movingIndex = offset - CGFloat(index - 1) * view.frame.width
                 }
-                introViews[index].moveEverythingAccordingToIndex(index: movingIndex)
+                introViews[index].moveEverythingAccordingToIndex(movingIndex)
             }
-            moveEverythingAccordingToIndex(index: offset)
+            moveEverythingAccordingToIndex(offset)
         }
     }
     //index : 0 ~ scrollview.contentsize
-    open func moveEverythingAccordingToIndex(index: CGFloat){
+    open func moveEverythingAccordingToIndex(_ index: CGFloat){
         fatalError("Must Override")
     }
     
-    open func changeBackgroundColor(index: CGFloat, fromColor: UIColor, toColor: UIColor, fromIndex: CGFloat, toIndex: CGFloat){
+    open func changeBackgroundColor(_ index: CGFloat, fromColor: UIColor, toColor: UIColor, fromIndex: CGFloat, toIndex: CGFloat){
         
         if index > fromIndex && index < toIndex{
             let difference = toIndex - fromIndex
-            let fromColorComponent = fromColor.cgColor.components!
-            let toColorComponent = toColor.cgColor.components!
+            let fromColorComponent = fromColor.cgColor.components
+            let toColorComponent = toColor.cgColor.components
             
-            let differenceInRed = toColorComponent[0] as CGFloat - fromColorComponent[0] as CGFloat
-            let differenceInGreen = toColorComponent[1] as CGFloat - fromColorComponent[1] as CGFloat
-            let differenceInBlue = toColorComponent[2] as CGFloat - fromColorComponent[2] as CGFloat
-            view.backgroundColor = UIColor(red: fromColorComponent[0] as CGFloat + differenceInRed / difference * (index - fromIndex), green: fromColorComponent[1] as CGFloat + differenceInGreen / difference * (index - fromIndex), blue: fromColorComponent[2] as CGFloat + differenceInBlue / difference * (index - fromIndex), alpha: 1)
+            let differenceInRed = ((toColorComponent?[0])! as CGFloat) - (fromColorComponent?[0])! as CGFloat
+            let differenceInGreen = ((toColorComponent?[1])! as CGFloat) - (fromColorComponent?[1])! as CGFloat
+            let differenceInBlue = ((toColorComponent?[2])! as CGFloat) - (fromColorComponent?[2])! as CGFloat
+            view.backgroundColor = UIColor(red: (fromColorComponent?[0])! as CGFloat + differenceInRed / difference * (index - fromIndex), green: (fromColorComponent?[1])! as CGFloat + differenceInGreen / difference * (index - fromIndex), blue: (fromColorComponent?[2])! as CGFloat + differenceInBlue / difference * (index - fromIndex), alpha: 1)
         }
         
     }
