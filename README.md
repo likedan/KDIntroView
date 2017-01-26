@@ -23,7 +23,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 iOS 8.0
 
 ## Introduction
-`KDIntroView` is a framework to create dynamic introduction views for App. You can create all sorts of cool animations.
+`KDIntroView` is a framework to create dynamic onboarding views(onboarding flows) for your iOS App. You can create all sorts of cool animations.
 
 ## Start!!!
 
