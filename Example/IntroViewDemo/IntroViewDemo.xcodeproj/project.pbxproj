@@ -32,7 +32,8 @@
 		42F139F51B49E128003D31A3 /* FourthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F139F41B49E128003D31A3 /* FourthView.swift */; };
 		42F139F71B49E5E2003D31A3 /* FifthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F139F61B49E5E2003D31A3 /* FifthView.swift */; };
 		42F139F91B49E64A003D31A3 /* 5View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42F139F81B49E64A003D31A3 /* 5View.xib */; };
-		E85D875ED388C9D7800E0571 /* Pods_IntroViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85F34E89ED062EDC8F8863C5 /* Pods_IntroViewDemo.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		F55E5A3D234E8746001F8642 /* Pods_IntroViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85F34E89ED062EDC8F8863C5 /* Pods_IntroViewDemo.framework */; };
+		F55E5A3F234E8748001F8642 /* KDIntroView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F55E5A3E234E8748001F8642 /* KDIntroView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		42F139F81B49E64A003D31A3 /* 5View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = 5View.xib; sourceTree = "<group>"; };
 		67A80A91EEDB8B8FBE6ECF2C /* Pods-IntroViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntroViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IntroViewDemo/Pods-IntroViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		85F34E89ED062EDC8F8863C5 /* Pods_IntroViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntroViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F55E5A3E234E8748001F8642 /* KDIntroView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KDIntroView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E85D875ED388C9D7800E0571 /* Pods_IntroViewDemo.framework in Frameworks */,
+				F55E5A3F234E8748001F8642 /* KDIntroView.framework in Frameworks */,
+				F55E5A3D234E8746001F8642 /* Pods_IntroViewDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +182,7 @@
 		EB691A8F7EDC2194EFDF6D57 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F55E5A3E234E8748001F8642 /* KDIntroView.framework */,
 				85F34E89ED062EDC8F8863C5 /* Pods_IntroViewDemo.framework */,
 			);
 			name = Frameworks;
@@ -242,15 +246,17 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "TakeFive Interactive";
 				TargetAttributes = {
 					42F139AE1B49DB2F003D31A3 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 89D52653SY;
 						LastSwiftMigration = 0800;
 					};
 					42F139C31B49DB2F003D31A3 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 89D52653SY;
 						LastSwiftMigration = 0800;
 						TestTargetID = 42F139AE1B49DB2F003D31A3;
 					};
@@ -261,6 +267,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -414,18 +421,27 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -461,18 +477,27 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -502,12 +527,13 @@
 			baseConfigurationReference = 67A80A91EEDB8B8FBE6ECF2C /* Pods-IntroViewDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 89D52653SY;
 				INFOPLIST_FILE = IntroViewDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.TakeFiveInteractive.com.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -516,12 +542,13 @@
 			baseConfigurationReference = 07ACD39D8E5AA014B5FF9EED /* Pods-IntroViewDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 89D52653SY;
 				INFOPLIST_FILE = IntroViewDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.TakeFiveInteractive.com.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -529,6 +556,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 89D52653SY;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -541,7 +569,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.TakeFiveInteractive.com.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IntroViewDemo.app/IntroViewDemo";
 			};
 			name = Debug;
@@ -550,6 +578,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 89D52653SY;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -558,7 +587,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.TakeFiveInteractive.com.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IntroViewDemo.app/IntroViewDemo";
 			};
 			name = Release;

@@ -24,7 +24,7 @@ class ViewController: KDIntroViewController {
         //setup the introduction view   : number of pages : the nib name of each page
         setup(["1View","2View","3View","4View","5View"])
         
-        view.bringSubview(toFront: beginButtonView)
+        view.bringSubviewToFront(beginButtonView)
     }
 
     override func moveEverythingAccordingToIndex(_ index: CGFloat) {

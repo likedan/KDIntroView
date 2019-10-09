@@ -80,12 +80,12 @@ open class KDIntroViewController: UIViewController, UIScrollViewDelegate{
     }
     
     
-    func dragged(_ recognizer : UIPanGestureRecognizer) {
+    @objc func dragged(_ recognizer : UIPanGestureRecognizer) {
         
         let translation = recognizer.translation(in: self.view)
         scroller.setContentOffset(CGPoint(x: view.frame.width * CGFloat(currentPageNum) - translation.x, y: 0), animated: false)
         
-        if recognizer.state == UIGestureRecognizerState.cancelled || recognizer.state == UIGestureRecognizerState.failed || recognizer.state == UIGestureRecognizerState.ended{
+        if recognizer.state == UIGestureRecognizer.State.cancelled || recognizer.state == UIGestureRecognizer.State.failed || recognizer.state == UIGestureRecognizer.State.ended{
             // should change page
             if abs(translation.x) > 30 {
                 if currentPageNum != 0 && translation.x > 0 {
